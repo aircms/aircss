@@ -1,0 +1,30 @@
+{
+  "name" : "air-css",
+  "version" : "0.0.1",
+  "unpkg" : "./dist/index.global.js",
+  "jsdelivr" : "./dist/index.global.js",
+  "type" : "module",
+  "main" : "./dist/index.cjs",
+  "module" : "./dist/index.js",
+  "types" : "./dist/index.d.ts",
+  "exports" : {
+    "." : {
+      "types" : "./dist/index.d.ts",
+      "import" : "./dist/index.js",
+      "require" : "./dist/index.cjs"
+    }
+  },
+  "files" : [
+    "dist"
+  ],
+  "scripts" : {
+    "build" : "tsup && tsx src/build-css.ts",
+    "dev" : "tsup --watch",
+    "build-css" : "tsx src/build-css.ts"
+  },
+  "devDependencies" : {
+    "tsup" : "^8.5.1",
+    "tsx" : "^4.22.1",
+    "typescript" : "^6.0.3"
+  }
+}
