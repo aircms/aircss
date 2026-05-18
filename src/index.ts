@@ -281,5 +281,10 @@ export class AirCss {
 }
 
 export type { IOptions } from "./types/IOptions";
+export type { IDefaults } from "./types/IDefaults";
+export type { IRule } from "./types/IRule";
+export type { IExtractedClass } from "./types/IExtractedClass";
+export type { IKeyframe } from "./types/IKeyframe";
+
 
 

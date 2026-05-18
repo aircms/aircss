@@ -94,4 +94,4 @@ declare class AirCss {
     private initSpaceVariables;
 }
 
-export { AirCss, type IOptions };
+export { AirCss, type IDefaults, type IExtractedClass, type IKeyframe, type IOptions, type IRule };
