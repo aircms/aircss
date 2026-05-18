@@ -122,7 +122,7 @@ export class AirCss {
       value = value.split(":");
     }
     value = value.filter((v) => v);
-    if (this.getOptions().defaults.colors[value[0]] === undefined) {
+    if (this.getOptions().defaults?.colors?.[value[0]] === undefined) {
       return null;
     }
 
@@ -145,7 +145,7 @@ export class AirCss {
   }
 
   getCssSpaceName(value: string): string | null {
-    if (this.getOptions().defaults.spaces[value] === undefined) {
+    if (this.getOptions().defaults.spaces?.[value] === undefined) {
       return null;
     }
     return `--${this.options.defaults.cssPrefix}-spacing-${value}`;
@@ -186,10 +186,11 @@ export class AirCss {
   }
 
   private initClassPrefixes(): void {
+    const breakpoints = this.options.defaults.breakpoints ?? {};
     this.classPrefixes = [
       "hov:",
-      ...Object.keys(this.options.defaults.breakpoints).map((key: string) => key + ":"),
-      ...Object.keys(this.options.defaults.breakpoints).map((key: string) => "hov:" + key + ":"),
+      ...Object.keys(breakpoints).map((key: string) => key + ":"),
+      ...Object.keys(breakpoints).map((key: string) => "hov:" + key + ":"),
     ];
   }
 
@@ -204,9 +205,9 @@ export class AirCss {
 
   private initColorVariables() {
 
-    const colors = this.options.defaults.colors;
-    const defaultColor = this.options.defaults.color;
-    const cssPrefix = this.options.defaults.cssPrefix;
+    const colors = this.options.defaults.colors ?? {};
+    const defaultColor = this.options.defaults.color ?? "primary";
+    const cssPrefix = this.options.defaults.cssPrefix ?? "as";
 
     style(`${cssPrefix}-colors`, (style: HTMLStyleElement) => {
       const css = [ ":root {" ];
@@ -234,10 +235,12 @@ export class AirCss {
 
   private initStyleElements(): void {
     const cssPrefix = this.options.defaults.cssPrefix;
+    const breakpoints = this.options.defaults.breakpoints ?? {};
+
     style(`${cssPrefix}-styles-base`);
-    Object.keys(this.options.defaults.breakpoints).forEach((breakpoint) => {
+    Object.keys(breakpoints).forEach((breakpoint) => {
       style(`${cssPrefix}-styles-${breakpoint}`, (style: HTMLStyleElement) => {
-        style.media = `(min-width: ${this.options.defaults.breakpoints[breakpoint]}px)`;
+        style.media = `(min-width: ${breakpoints[breakpoint]}px)`;
       });
     });
   }

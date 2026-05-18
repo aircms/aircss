@@ -2,6 +2,6 @@ import { IDefaults } from "./IDefaults";
 import { IRule, TDefaultRule } from "./IRule";
 
 export interface IOptions {
-  defaults: IDefaults;
+  defaults: Partial<IDefaults>;
   rules: Record<string | TDefaultRule, IRule>;
 }
