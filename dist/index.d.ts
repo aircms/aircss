@@ -52,10 +52,6 @@ interface IOptions {
     defaults: IDefaults;
     rules: Record<string | TDefaultRule, IRule>;
 }
-interface IUserOptions {
-    defaults?: IDefaults;
-    rules?: Record<string | TDefaultRule, IRule>;
-}
 
 interface IKeyframe {
     [step: string]: {
@@ -70,8 +66,8 @@ declare class AirCss {
     private classPrefixes;
     private rules;
     private static instance;
-    static setup(options?: IUserOptions): void;
-    constructor(options?: IUserOptions);
+    static setup(options?: Partial<IOptions>): void;
+    constructor(options?: Partial<IOptions>);
     getRuleWithKey(key: string): IRule | undefined;
     getClassPrefixes(): Array<string>;
     getRules(): Record<string, IRule>;
@@ -85,7 +81,7 @@ declare class AirCss {
     addKeyframe(name: string, value: string | IKeyframe): void;
     listen(pattern: string, callback: (el: HTMLElement, className: string) => void): MutationObserver | undefined;
     getOptions(): IOptions;
-    setOptions(options?: IUserOptions): void;
+    setOptions(options?: Partial<IOptions>): void;
     getCssColorName(value: string | Array<string>, rgb?: boolean): string | null;
     getCssColorValue(value: string | Array<string>, rgb?: boolean): string | null;
     getCssSpaceName(value: string): string | null;

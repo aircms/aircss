@@ -1,4 +1,4 @@
-import { IOptions, IUserOptions } from "./types/IOptions";
+import { IOptions } from "./types/IOptions";
 import { defaultOptions } from "./defaults/default-options";
 import { listen } from "./helper/listener";
 import { IRule } from "./types/IRule";
@@ -20,7 +20,7 @@ export class AirCss {
 
   private static instance: AirCss | null = null;
 
-  static setup(options?: IUserOptions): void {
+  static setup(options?: Partial<IOptions>): void {
     if (!this.instance) {
       this.instance = new this(options);
     } else {
@@ -28,7 +28,7 @@ export class AirCss {
     }
   }
 
-  constructor(options?: IUserOptions) {
+  constructor(options?: Partial<IOptions>) {
     doc(() => {
       this.setOptions(options);
 
@@ -108,7 +108,7 @@ export class AirCss {
     return this.options;
   }
 
-  setOptions(options?: IUserOptions) {
+  setOptions(options?: Partial<IOptions>) {
     this.initConfig(options);
     this.initClassPrefixes();
     this.initRules();
@@ -159,7 +159,7 @@ export class AirCss {
     return `var(${spaceVarName})`;
   }
 
-  private initConfig(config: IUserOptions = {}): void {
+  private initConfig(config: Partial<IOptions> = {}): void {
     this.options = {
       ...defaultOptions,
       ...config,

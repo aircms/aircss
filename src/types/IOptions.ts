@@ -5,8 +5,3 @@ export interface IOptions {
   defaults: IDefaults;
   rules: Record<string | TDefaultRule, IRule>;
 }
-
-export interface IUserOptions {
-  defaults?: IDefaults;
-  rules?: Record<string | TDefaultRule, IRule>;
-}
