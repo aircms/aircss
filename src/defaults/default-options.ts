@@ -226,6 +226,28 @@ export const defaultOptions: IOptions = {
     colors: {
       primary: "blue",
       secondary: "purple",
+      light: {
+        100: "#1a1a1a",
+        200: "#333333",
+        300: "#666666",
+        400: "#999999",
+        500: "#ffffff",
+        600: "#ffffff",
+        700: "#ffffff",
+        800: "#ffffff",
+        900: "#ffffff",
+      },
+      dark: {
+        100: "#ffffff",
+        200: "#dddddd",
+        300: "#999999",
+        400: "#444444",
+        500: "#000000",
+        600: "#000000",
+        700: "#000000",
+        800: "#000000",
+        900: "#000000",
+      },
       emerald: {
         100: "#d1fae5",
         200: "#a7f3d0",
