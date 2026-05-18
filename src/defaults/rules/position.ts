@@ -17,6 +17,7 @@ export const position: IRule = {
 
 export const positionZIndex: IRule = {
   key: "z",
+  units: "",
   styles: {
     "z-index": "{value}",
   },
