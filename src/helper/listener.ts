@@ -37,10 +37,30 @@ export const listen = (pattern: string, callback: (el: HTMLElement, className: s
 
     const observer = new MutationObserver((mutations) => {
       for (const mutation of mutations) {
-        if (mutation.type !== "attributes" || mutation.attributeName !== "class") {
-          continue;
+
+        // class changed
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "class"
+        ) {
+          check(mutation.target as HTMLElement);
         }
-        check(mutation.target as HTMLElement);
+
+        // new nodes added
+        if (mutation.type === "childList") {
+          mutation.addedNodes.forEach((node) => {
+            if (!(node instanceof HTMLElement)) {
+              return;
+            }
+
+            check(node);
+
+            // если нужны вложенные элементы
+            node.querySelectorAll("*").forEach((child) => {
+              check(child as HTMLElement);
+            });
+          });
+        }
       }
     });
 
