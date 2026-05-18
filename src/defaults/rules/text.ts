@@ -1,4 +1,6 @@
 import { IRule } from "../../types/IRule";
+import { IExtractedClass } from "../../types/IExtractedClass";
+import { AirCss } from "../../index";
 
 export const textColor: IRule = {
   key: "text",
@@ -8,6 +10,12 @@ export const textColor: IRule = {
   values: {
     initial: "initial",
     inherit: "inherit",
+  },
+  override: (el, extractedClass: IExtractedClass, airCss: AirCss): IExtractedClass => {
+    if (!extractedClass.arbitrary) {
+      extractedClass.normalizedValue = airCss.getCssColorValue(extractedClass.value) ?? extractedClass.value;
+    }
+    return extractedClass;
   },
 };
 
