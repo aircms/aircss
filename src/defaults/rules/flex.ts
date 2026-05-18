@@ -100,6 +100,7 @@ export const flexGapVertical: IRule = {
 
 export const flexGrow: IRule = {
   key: "grow",
+  units: "",
   styles: {
     "flex-grow": "{value}",
   },
@@ -107,6 +108,7 @@ export const flexGrow: IRule = {
 
 export const flexShrink: IRule = {
   key: "shrink",
+  units: "",
   styles: {
     "flex-shrink": "{value}",
   },

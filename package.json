@@ -20,7 +20,8 @@
   "scripts" : {
     "build" : "tsup && tsx src/build-css.ts",
     "dev" : "tsup --watch",
-    "build-css" : "tsx src/build-css.ts"
+    "build-css" : "tsx src/build-css.ts",
+    "deploy" : "npm run build && git add . && git commit -m 'Update' && git push"
   },
   "devDependencies" : {
     "tsup" : "^8.5.1",
