@@ -86,6 +86,7 @@ export const borderOpacity: IRule = {
     airCss.addStyles({
       breakpoint: extractedClass.media,
       selector: buildSelector(extractedClass),
+      onlyOne: true,
       styles: {
         [`--${airCss.getOptions().defaults.cssPrefix}-border-color-opacity`]: (extractedClass.value / 100).toString(),
       },

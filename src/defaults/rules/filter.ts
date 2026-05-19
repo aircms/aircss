@@ -72,6 +72,7 @@ export const filter: IRule = {
     airCss.addStyles({
       breakpoint: extractedClassName.media,
       selector: buildSelector(extractedClassName),
+      onlyOne: true,
       styles: {
         [`--${cssPrefix}-${filter.name}`]: `${filter.name}(${filter.value}${filter.unit})`,
       },
@@ -116,6 +117,7 @@ export const backdrop: IRule = {
     airCss.addStyles({
       breakpoint: extractedClassName.media,
       selector: buildSelector(extractedClassName),
+      onlyOne: true,
       styles: {
         [`--${cssPrefix}-backdrop-${filter.name}`]: `${filter.name}(${filter.value}${filter.unit ?? ""})`,
       },

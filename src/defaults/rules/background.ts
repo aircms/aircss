@@ -35,6 +35,7 @@ export const backgroundOpacity: IRule = {
       airCss.addStyles({
         breakpoint: extractedClass.media,
         selector: buildSelector(extractedClass),
+        onlyOne: true,
         styles: {
           [`--${airCss.getOptions().defaults.cssPrefix}-background-color-opacity`]: (extractedClass.value / 100).toString(),
         },

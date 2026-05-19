@@ -54,6 +54,7 @@ const computeValue = (className: string, extractedClassName: IExtractedClass, ai
   airCss.addStyles({
     breakpoint: extractedClassName.media,
     selector: buildSelector(extractedClassName),
+    onlyOne: true,
     styles: {
       [`--${cssPrefix}-transform-${func}`]: `${func}(${value})`,
     },
