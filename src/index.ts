@@ -43,7 +43,7 @@ export class AirCss {
       this.classCache[className] = true;
 
       if (!hasSelector("." + escape(className))) {
-        this.proceedClassName(className, el);
+        // this.proceedClassName(className, el);
       }
     });
   }
