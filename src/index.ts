@@ -164,6 +164,7 @@ export class AirCss {
   }
 
   setOptions(options?: Partial<IOptions>) {
+    console.log(options);
     console.log("AirCss - setOptions");
 
     this.initConfig(options);
