@@ -50,7 +50,7 @@ export class AirCss {
     const css: Array<string> = [];
 
     Object.entries(this.staticCss).forEach(([ id, nodes ]) => {
-      let media = null;
+      let media: string = "";
       if (this.options.defaults.breakpoints?.[id] !== undefined) {
         media = `media="(min-width: ${this.options.defaults.breakpoints[id]}px)"`;
       }
