@@ -1,8 +1,8 @@
-export const hasSelector = (selector: string): boolean => {
+export const hasSelector = (selector): boolean => {
   try {
     for (const sheet of Array.from(document.styleSheets)) {
 
-      let rules: CSSRuleList;
+      let rules;
 
       try {
         rules = sheet.cssRules;

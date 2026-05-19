@@ -6,7 +6,7 @@ export const common: IRule = {
     airCss.addStyles({
       selector: "*",
       styles: {
-        "box-sizing": "border-box;",
+        "box-sizing": "border-box",
       },
     });
     airCss.addStyles({

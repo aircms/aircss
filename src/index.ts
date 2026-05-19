@@ -12,6 +12,7 @@ import { extractClass } from "./helper/extract-class";
 import { hexToRgb } from "./helper/hex-to-rgb";
 import { extractClassesFromHtml } from "./helper/extract-classes-from-html";
 import { hasSelector } from "./helper/has-selector";
+import { escape } from "./helper/escape";
 
 export class AirCss {
   private options: IOptions = defaultOptions;
@@ -40,7 +41,7 @@ export class AirCss {
         return;
       }
       this.classCache[className] = true;
-      if (!hasSelector(className)) {
+      if (!hasSelector(escape(className))) {
         this.proceedClassName(className, el);
       }
     });
