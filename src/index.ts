@@ -44,8 +44,8 @@ export class AirCss {
       const selector = `.${className}`;
       console.log({
         selector,
-        escape: escape(selector),
-        hasSelector: hasSelector(escape(selector)),
+        escape: "." + escape(className),
+        hasSelector: hasSelector("." + escape(className)),
       });
 
       if (!hasSelector(selector)) {
