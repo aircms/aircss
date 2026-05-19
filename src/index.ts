@@ -51,9 +51,9 @@ export class AirCss {
     extractClassesFromHtml(html).forEach((className) => this.proceedClassName(className, null));
 
     const css: Array<string> = [
-      `<style id="${this.options.defaults.cssPrefix}-base">${this.staticCss["base"]?.join("\n")}</style>`,
       `<style id="${this.options.defaults.cssPrefix}-colors">${this.staticCss["colors"]?.join("\n")}</style>`,
       `<style id="${this.options.defaults.cssPrefix}-spaces">${this.staticCss["spaces"]?.join("\n")}</style>`,
+      `<style id="${this.options.defaults.cssPrefix}-base">${this.staticCss["base"]?.join("\n")}</style>`,
     ];
 
     Object.entries(this.options.defaults.breakpoints as {}).forEach(([ name, breakpoint ]) => {
