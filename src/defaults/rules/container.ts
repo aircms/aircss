@@ -8,16 +8,11 @@ export const container: IRule = {
     "margin-right": "auto",
   },
   init: (airCss: AirCss) => {
-    console.log("container::init");
-
     const breakpoints = airCss.getOptions().defaults.breakpoints ?? {};
     const containers = airCss.getOptions().defaults.containers;
 
     Object.keys(breakpoints).forEach((media) => {
       if (containers) {
-
-        console.log(media, containers[media]);
-
         airCss.addStyles({
           breakpoint: !breakpoints[media] ? null : media,
           selector: ".container",
