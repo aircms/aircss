@@ -175,7 +175,7 @@ export const defaultOptions: IOptions = {
       xxl: 1640,
     },
     containers: {
-      sm: "100%",
+      sm: "calc(100% - 40px)",
       md: "720px",
       lg: "1000px",
       xl: "1200px",
