@@ -66,7 +66,7 @@ declare class AirCss {
     private classPrefixes;
     private rules;
     private static instance;
-    static setup(options?: Partial<IOptions>): void;
+    static getInstance(options?: Partial<IOptions>): AirCss;
     constructor(options?: Partial<IOptions>);
     getRuleWithKey(key: string): IRule | undefined;
     getClassPrefixes(): Array<string>;

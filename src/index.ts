@@ -20,12 +20,13 @@ export class AirCss {
 
   private static instance: AirCss | null = null;
 
-  static setup(options?: Partial<IOptions>): void {
+  static getInstance(options?: Partial<IOptions>): AirCss {
     if (!this.instance) {
       this.instance = new this(options);
     } else {
       this.instance.setOptions(options);
     }
+    return this.instance;
   }
 
   constructor(options?: Partial<IOptions>) {
