@@ -112,7 +112,11 @@ export class AirCss {
 
     doc(() => style(styleId, (style: HTMLStyleElement) => {
       callback && callback(style);
-      style.appendChild(document.createTextNode(node));
+      if (replace) {
+        style.innerHTML = node;
+      } else {
+        style.appendChild(document.createTextNode(node));
+      }
     }));
   }
 
