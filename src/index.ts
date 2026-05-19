@@ -50,10 +50,10 @@ export class AirCss {
     const css: Array<string> = [];
 
     Object.entries(this.staticCss).forEach(([ id, nodes ]) => {
-      css.push(`<style id="${id}">${(nodes ?? []).join("\n")}</style>`);
+      css.push(`<style id="${id}">${(nodes ?? []).join("")}</style>`);
     });
 
-    return css.join("\n");
+    return css.join("");
   }
 
   proceedClassName(className: string, el: HTMLElement | null): void {
