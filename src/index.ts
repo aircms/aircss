@@ -101,8 +101,8 @@ export class AirCss {
     this.staticCss[styleId].push(node);
 
     doc(() => style(styleId, (style: HTMLStyleElement) => {
-      callback && callback(style);
-      style.appendChild(document.createTextNode(node));
+      // callback && callback(style);
+      // style.appendChild(document.createTextNode(node));
     }));
   }
 
