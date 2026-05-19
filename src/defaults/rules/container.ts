@@ -15,11 +15,11 @@ export const container: IRule = {
 
     Object.keys(breakpoints).forEach((media) => {
       if (containers) {
-        
+
         console.log(media, containers[media]);
 
         airCss.addStyles({
-          breakpoint: typeof containers[media] !== "undefined" ? media : null,
+          breakpoint: !breakpoints[media] ? null : media,
           selector: ".container",
           styles: {
             "max-width": containers[media].toString(),
