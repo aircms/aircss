@@ -51,7 +51,10 @@ export class AirCss {
 
   getStaticCss(html: string): string {
 
-    extractClassesFromHtml(html).forEach((className) => this.proceedClassName(className, null));
+    const classes = extractClassesFromHtml(html);
+    classes.forEach((className) => this.proceedClassName(className, null));
+
+    console.log(this.staticCss);
 
     const css: Array<string> = [
       `<style id="${this.options.defaults.cssPrefix}-colors">${this.staticCss["colors"]?.join("\n")}</style>`,
