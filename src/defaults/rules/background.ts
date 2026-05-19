@@ -46,7 +46,6 @@ export const backgroundImage: IRule = {
   key: "bg:img",
   styles: {
     "background-image": "url({value})",
-    "background-size": "cover",
   },
 };
 
