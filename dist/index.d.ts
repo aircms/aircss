@@ -74,7 +74,7 @@ declare class AirCss {
     getRuleWithKey(key: string): IRule | undefined;
     getClassPrefixes(): Array<string>;
     getRules(): Record<string, IRule>;
-    style(id: string, node: string, callback?: (style: HTMLStyleElement) => void): void;
+    style(id: string, node: string, callback?: (style: HTMLStyleElement) => void, replace?: boolean): void;
     addStyle(media: string | null | undefined, node: string): void;
     addStyles(styles: {
         breakpoint?: string | null;

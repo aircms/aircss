@@ -99,11 +99,15 @@ export class AirCss {
     return this.rules;
   }
 
-  style(id: string, node: string, callback?: (style: HTMLStyleElement) => void): void {
+  style(id: string, node: string, callback?: (style: HTMLStyleElement) => void, replace: boolean = false): void {
     const styleId = `${this.options.defaults.cssPrefix}-${id}`;
 
     this.staticCss[id] = this.staticCss[id] ?? [];
-    this.staticCss[id].push(node);
+    if (replace) {
+      this.staticCss[id] = [ node ];
+    } else {
+      this.staticCss[id].push(node);
+    }
 
     doc(() => style(styleId, (style: HTMLStyleElement) => {
       callback && callback(style);
@@ -296,7 +300,7 @@ export class AirCss {
       }
     });
 
-    this.style("spaces", css.join("\n"));
+    this.style("spaces", css.join("\n"), undefined, true);
   }
 }
 
