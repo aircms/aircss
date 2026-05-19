@@ -50,7 +50,11 @@ export class AirCss {
     const css: Array<string> = [];
 
     Object.entries(this.staticCss).forEach(([ id, nodes ]) => {
-      css.push(`<style id="${id}">${(nodes ?? []).join("")}</style>`);
+      let media = null;
+      if (this.options.defaults.breakpoints?.[id] !== undefined) {
+        media = `media="(min-width: ${this.options.defaults.breakpoints[id]}px)"`;
+      }
+      css.push(`<style id="${id}" ${media}>${(nodes ?? []).join("")}</style>`);
     });
 
     return css.join("");
