@@ -12,6 +12,7 @@ export const backgroundColor: IRule = {
     none: "transparent",
   },
   init: (airCss: AirCss) => {
+    console.log(typeof window);
     console.log("backgroundColor::init");
 
     airCss.addStyles({
