@@ -44,8 +44,8 @@ interface IRule {
         [key: string]: any;
     };
     init?: (airCss: AirCss) => void;
-    callback?: (el: HTMLElement, extractedClassName: IExtractedClass, airCss: AirCss) => void;
-    override?: (el: HTMLElement, extractedClassName: IExtractedClass, airCss: AirCss) => IExtractedClass | null;
+    callback?: (el: HTMLElement | null, extractedClassName: IExtractedClass, airCss: AirCss) => void;
+    override?: (el: HTMLElement | null, extractedClassName: IExtractedClass, airCss: AirCss) => IExtractedClass | null;
 }
 
 interface IOptions {
@@ -65,13 +65,16 @@ declare class AirCss {
     private keyframes;
     private classPrefixes;
     private rules;
+    private staticCss;
     private static instance;
     static getInstance(options?: Partial<IOptions>): AirCss;
     constructor(options?: Partial<IOptions>);
+    getStaticCss(html: string): string;
+    proceedClassName(className: string, el: HTMLElement | null): void;
     getRuleWithKey(key: string): IRule | undefined;
     getClassPrefixes(): Array<string>;
     getRules(): Record<string, IRule>;
-    getStyleElement(media: string | null | undefined, callback: (style: HTMLStyleElement) => void): void;
+    style(id: string, node: string, callback?: (style: HTMLStyleElement) => void): void;
     addStyle(media: string | null | undefined, node: string): void;
     addStyles(styles: {
         breakpoint?: string | null;

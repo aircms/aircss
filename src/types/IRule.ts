@@ -55,6 +55,6 @@ export interface IRule {
     [key: string]: any;
   };
   init?: (airCss: AirCss) => void;
-  callback?: (el: HTMLElement, extractedClassName: IExtractedClass, airCss: AirCss) => void;
-  override?: (el: HTMLElement, extractedClassName: IExtractedClass, airCss: AirCss) => IExtractedClass | null;
+  callback?: (el: HTMLElement | null, extractedClassName: IExtractedClass, airCss: AirCss) => void;
+  override?: (el: HTMLElement | null, extractedClassName: IExtractedClass, airCss: AirCss) => IExtractedClass | null;
 }
