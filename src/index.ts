@@ -45,9 +45,7 @@ export class AirCss {
       }
       this.classCache[className] = true;
 
-      if (!hasSelector("." + escape(className))) {
-        this.proceedClassName(className, el);
-      }
+      this.proceedClassName(className, el);
     });
   }
 
@@ -71,6 +69,10 @@ export class AirCss {
   }
 
   proceedClassName(className: string, el: HTMLElement | null): void {
+    if (hasSelector("." + escape(className))) {
+      return;
+    }
+
     const extractedClass = extractClass(className, this);
 
     if (!extractedClass.rule) {
