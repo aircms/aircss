@@ -12,8 +12,6 @@ export const backgroundColor: IRule = {
     none: "transparent",
   },
   init: (airCss: AirCss) => {
-    console.log("backgroundColor::init");
-
     airCss.addStyles({
       selector: "[class*=\"bg:\"]",
       styles: { [`--${airCss.getOptions().defaults.cssPrefix}-background-color-opacity`]: "1" },

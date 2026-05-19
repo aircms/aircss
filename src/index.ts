@@ -25,6 +25,7 @@ export class AirCss {
   private static instance: AirCss | null = null;
 
   static getInstance(options?: Partial<IOptions>): AirCss {
+    console.log("AirCss - getInstance");
 
     if (!this.instance) {
       this.instance = new this(options);
@@ -35,7 +36,7 @@ export class AirCss {
   }
 
   constructor(options?: Partial<IOptions>) {
-    console.log("AirCss.constructor");
+    console.log("AirCss - constructor");
 
     this.setOptions(options);
 
@@ -53,8 +54,6 @@ export class AirCss {
 
     const classes = extractClassesFromHtml(html);
     classes.forEach((className) => this.proceedClassName(className, null));
-
-    console.log(this.staticCss);
 
     const css: Array<string> = [
       `<style id="${this.options.defaults.cssPrefix}-colors">${this.staticCss["colors"]?.join("\n")}</style>`,
@@ -165,6 +164,8 @@ export class AirCss {
   }
 
   setOptions(options?: Partial<IOptions>) {
+    console.log("AirCss - setOptions");
+
     this.initConfig(options);
     this.initColorVariables();
     this.initStyleElements();
