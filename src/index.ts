@@ -41,14 +41,8 @@ export class AirCss {
         return;
       }
       this.classCache[className] = true;
-      const selector = `.${className}`;
-      console.log({
-        selector,
-        escape: "." + escape(className),
-        hasSelector: hasSelector("." + escape(className)),
-      });
 
-      if (!hasSelector(selector)) {
+      if (!hasSelector("." + escape(className))) {
         this.proceedClassName(className, el);
       }
     });
