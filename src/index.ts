@@ -27,7 +27,7 @@ export class AirCss {
   static getInstance(options?: Partial<IOptions>): AirCss {
     if (!this.instance) {
       this.instance = new this(options);
-    } else {
+    } else if (options) {
       this.instance.setOptions(options);
     }
     return this.instance;
