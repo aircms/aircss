@@ -64,6 +64,7 @@ export const borderColor: IRule = {
   init: (airCss: AirCss) => {
     airCss.addStyles({
       selector: "[class*=\"bc:\"]",
+      onlyOne: true,
       styles: {
         "border-width": "1px",
         "border-style": "solid",

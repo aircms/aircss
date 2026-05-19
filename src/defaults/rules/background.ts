@@ -14,9 +14,8 @@ export const backgroundColor: IRule = {
   init: (airCss: AirCss) => {
     airCss.addStyles({
       selector: "[class*=\"bg:\"]",
-      styles: {
-        [`--${airCss.getOptions().defaults.cssPrefix}-background-color-opacity`]: "1",
-      },
+      styles: { [`--${airCss.getOptions().defaults.cssPrefix}-background-color-opacity`]: "1" },
+      onlyOne: true,
     });
   },
   override: (e, extractedClass: IExtractedClass, airCss: AirCss): IExtractedClass => {

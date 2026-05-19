@@ -106,6 +106,7 @@ export const transformCommon: IRule = {
 
     airCss.addStyles({
       selector: "[class*=\"tf:\"]",
+      onlyOne: true,
       styles: {
         transform: cssTransforms.join(" "),
       },

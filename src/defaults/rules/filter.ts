@@ -58,6 +58,7 @@ export const filter: IRule = {
 
     airCss.addStyles({
       selector: "[class*=\"filter:\"]",
+      onlyOne: true,
       styles: {
         filter: vars.join(" "),
       },
@@ -100,6 +101,7 @@ export const backdrop: IRule = {
 
     airCss.addStyles({
       selector: "[class*=\"backdrop:\"]",
+      onlyOne: true,
       styles: {
         "backdrop-filter": backdropsVars.join(" "),
       },
