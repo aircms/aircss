@@ -125,7 +125,17 @@ export class AirCss {
     this.style(media ?? "base", node);
   }
 
-  addStyles(styles: { breakpoint?: string | null, selector: string, styles: Record<string, string | number> }): void {
+  addStyles(
+    styles: {
+      breakpoint?: string | null,
+      selector: string,
+      styles: Record<string, string | number>,
+      onlyOne?: boolean
+    },
+  ): void {
+    if (styles.onlyOne && hasSelector(styles.selector)) {
+      return;
+    }
     this.addStyle(styles.breakpoint, `${styles.selector} { ${Object.entries(styles.styles).map(([ key, value ]) => `${key}: ${value};`).join(" ")} }`);
   }
 

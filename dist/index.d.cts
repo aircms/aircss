@@ -80,6 +80,7 @@ declare class AirCss {
         breakpoint?: string | null;
         selector: string;
         styles: Record<string, string | number>;
+        onlyOne?: boolean;
     }): void;
     addKeyframe(name: string, value: string | IKeyframe): void;
     listen(pattern: string, callback: (el: HTMLElement, className: string) => void): MutationObserver | undefined;
