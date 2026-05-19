@@ -1,0 +1,391 @@
+<style id="as-base">* {
+  box-sizing: border-box;;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+[class*="bc:"] {
+  border-width: 1px;
+  border-style: solid;
+  --as-border-color-opacity: 1;
+}
+
+[class*="bg:"] {
+  --as-background-color-opacity: 1;
+}
+
+[class*="filter:"] {
+  filter: var(--as-blur,) var(--as-brightness,) var(--as-contrast,) var(--as-grayscale,) var(--as-hue-rotate,) var(--as-invert,) var(--as-opacity,) var(--as-saturate,) var(--as-sepia,) var(--as-drop-shadow,);
+}
+
+[class*="backdrop:"] {
+  backdrop-filter: var(--as-backdrop-blur,) var(--as-backdrop-brightness,) var(--as-backdrop-contrast,) var(--as-backdrop-grayscale,) var(--as-backdrop-hue-rotate,) var(--as-backdrop-invert,) var(--as-backdrop-opacity,) var(--as-backdrop-saturate,) var(--as-backdrop-sepia,);
+}
+
+[class*="tf:"] {
+  transform: var(--as-transform-perspective, perspective(100000px)) var(--as-transform-rotate, rotate(0deg)) var(--as-transform-rotateX, rotateX(0deg)) var(--as-transform-rotateY, rotateY(0deg)) var(--as-transform-rotateZ, rotateZ(0deg)) var(--as-transform-rotate3d, rotate3d(0, 0, 1, 0deg)) var(--as-transform-skew, skew(0deg, 0deg)) var(--as-transform-skewX, skewX(0deg)) var(--as-transform-skewY, skewY(0deg)) var(--as-transform-scale, scale(1)) var(--as-transform-scaleX, scaleX(1)) var(--as-transform-scaleY, scaleY(1)) var(--as-transform-scaleZ, scaleZ(1)) var(--as-transform-scale3d, scale3d(1, 1, 1)) var(--as-transform-translate, translate(0, 0)) var(--as-transform-translateX, translateX(0)) var(--as-transform-translateY, translateY(0)) var(--as-transform-translateZ, translateZ(0)) var(--as-transform-translate3d, translate3d(0, 0, 0)) var(--as-transform-matrix, matrix(1, 0, 0, 1, 0, 0)) var(--as-transform-matrix3d, matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1));
+}
+
+.pos\:fix {
+  position: fixed !important;
+}
+
+.t\:0 {
+  top: 0px !important;
+}
+
+.z\:3 {
+  z-index: 3 !important;
+}
+
+.w\:f {
+  width: 100% !important;
+}
+
+.bw\:0 {
+  border-width: 0px !important;
+}
+
+.ts\:300 {
+  transition-property: all !important;
+  transition-duration: 300ms !important;
+}
+
+.text\:light {
+  color: var(--as-light) !important;
+}
+
+.bg\:dark {
+  background-color: rgba(var(--as-dark-rgb), var(--as-background-color-opacity)) !important;
+}
+
+.backdrop\:blur\:50 {
+  --as-backdrop-blur: blur(5px);
+}
+
+.bg\:op\:70 {
+  --as-background-color-opacity: 0.7;
+}
+
+.br\:be\:10 {
+  border-bottom-right-radius: 10px !important;
+}
+
+.br\:bs\:10 {
+  border-bottom-left-radius: 10px !important;
+}
+
+.container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.row\:a {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr)) !important;
+}
+
+.ts\:200 {
+  transition-property: all !important;
+  transition-duration: 200ms !important;
+}
+
+.py\:20 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.col\:5 {
+  grid-column: span 5 !important;
+}
+
+.d\:flex {
+  display: flex !important;
+}
+
+.align\:center {
+  align-items: center !important;
+}
+
+.gap\:5 {
+  gap: 5px !important;
+}
+
+.td\:none {
+  text-decoration: none !important;
+}
+
+.shrink\:0 {
+  flex-shrink: 0 !important;
+}
+
+.ar\:1\:1 {
+  aspect-ratio: 1 / 1 !important;
+}
+
+.d\:block {
+  display: block !important;
+}
+
+.w\:40 {
+  width: 40px !important;
+}
+
+.w\:max\:f {
+  max-width: 100% !important;
+}
+
+.fw\:bold {
+  font-weight: 700 !important;
+}
+
+.fs\:40 {
+  font-size: 40px !important;
+}
+
+.col\:6 {
+  grid-column: span 6 !important;
+}
+
+.center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.d\:none {
+  display: none !important;
+}
+
+.flex\:col {
+  flex-direction: column !important;
+}
+
+.gap\:20 {
+  gap: 20px !important;
+}
+
+.col\:7 {
+  grid-column: span 7 !important;
+}
+
+.justify\:end {
+  justify-content: flex-end !important;
+}
+
+.gap\:10 {
+  gap: 10px !important;
+}
+
+.gap\:4 {
+  gap: 4px !important;
+}
+
+.w\:25 {
+  width: 25px !important;
+}
+
+.br\:circle {
+  border-radius: 50% !important;
+}
+
+.fs\:14 {
+  font-size: 14px !important;
+}
+
+.bg\:blue {
+  background-color: rgba(var(--as-blue-rgb), var(--as-background-color-opacity)) !important;
+}
+
+.text\:white {
+  color: white !important;
+}
+
+.bg\:purple {
+  background-color: rgba(var(--as-purple-rgb), var(--as-background-color-opacity)) !important;
+}
+
+.bg\:gray\:900 {
+  background-color: rgba(var(--as-gray-900-rgb), var(--as-background-color-opacity)) !important;
+}
+
+.bg\:red {
+  background-color: rgba(var(--as-red-rgb), var(--as-background-color-opacity)) !important;
+}
+
+.bg\:green\:400 {
+  background-color: rgba(var(--as-green-400-rgb), var(--as-background-color-opacity)) !important;
+}
+
+.w\:30 {
+  width: 30px !important;
+}
+
+.h\:20 {
+  height: 20px !important;
+}
+
+.of\:cover {
+  object-fit: cover !important;
+}
+
+.ov\:hid {
+  overflow: hidden !important;
+}
+
+.br\:4 {
+  border-radius: 4px !important;
+}
+
+.fs\:13 {
+  font-size: 13px !important;
+}
+
+.justify\:between {
+  justify-content: space-between !important;
+}
+
+.p\:4 {
+  padding: 4px !important;
+}
+
+.h\:30 {
+  height: 30px !important;
+}
+
+.h\:2 {
+  height: 2px !important;
+}
+
+.bg\:light {
+  background-color: rgba(var(--as-light-rgb), var(--as-background-color-opacity)) !important;
+}
+
+.pos\:rel {
+  position: relative !important;
+}
+
+.br\:be\:20 {
+  border-bottom-right-radius: 20px !important;
+}
+
+.br\:bs\:20 {
+  border-bottom-left-radius: 20px !important;
+}
+
+.an\:18000\:breadcrumbsImageZoom {
+  animation: breadcrumbsImageZoom 18000ms ease-in-out !important;
+}
+
+.an\:count\:inf {
+  animation-iteration-count: infinite !important;
+}
+
+.bg\:img\:\[https\:\/\/fs\.alltheworld-apartments\.com\/storage\/istanbul\/welcome\/2b710d8e280482b45074786f46d3b0cb\.jpeg\] {
+  background-image: url(https://fs.alltheworld-apartments.com/storage/istanbul/welcome/2b710d8e280482b45074786f46d3b0cb.jpeg) !important;
+}
+
+.bg\:pos\:center {
+  background-position: center !important;
+}
+
+.bg\:size\:cover {
+  background-size: cover !important;
+}
+
+.h\:f {
+  height: 100% !important;
+}
+
+.pos\:abs {
+  position: absolute !important;
+}
+
+.s\:0 {
+  left: 0px !important;
+}
+
+.z\:1 {
+  z-index: 1 !important;
+}
+
+.z\:2 {
+  z-index: 2 !important;
+}
+
+.bg\:op\:50 {
+  --as-background-color-opacity: 0.5;
+}
+
+.pt\:100 {
+  padding-top: 100px !important;
+}
+
+.ta\:center {
+  text-align: center !important;
+}
+
+.w\:1200 {
+  width: 1200px !important;
+}
+
+.br\:30 {
+  border-radius: 30px !important;
+}
+
+.p\:50 {
+  padding: 50px !important;
+}
+
+.my\:120 {
+  margin-top: 120px !important;
+  margin-bottom: 120px !important;
+}
+
+.fs\:30 {
+  font-size: 30px !important;
+}
+
+.text\:zinc\:300 {
+  color: var(--as-zinc-300) !important;
+}
+
+.row {
+  display: grid !important;
+  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+}
+
+.col\:3 {
+  grid-column: span 3 !important;
+}
+
+.p\:20 {
+  padding: 20px !important;
+}
+
+.text\:dark {
+  color: var(--as-dark) !important;
+}
+
+.br\:6 {
+  border-radius: 6px !important;
+}
+
+.cursor\:pointer {
+  cursor: pointer !important;
+}
+
+.text\:primary {
+  color: var(--as-primary) !important;
+}
+
+.h\:4000 {
+  height: 4000px !important;
+}
+
+.h\:2 {
+  height: 2px !important;
+}</style>

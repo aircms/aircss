@@ -1,0 +1,3862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module" src="/@vite/client"></script>
+    <meta charset="utf-8">
+    <title>Find Your Perfect Property in Istanbul</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css" data-primeng-style-id="primitive-variables">
+      :root, :host {
+        --p-stone-50: #fafaf9;
+        --p-stone-100: #f5f5f4;
+        --p-stone-200: #e7e5e4;
+        --p-stone-300: #d6d3d1;
+        --p-stone-400: #a8a29e;
+        --p-stone-500: #78716c;
+        --p-stone-600: #57534e;
+        --p-stone-700: #44403c;
+        --p-stone-800: #292524;
+        --p-stone-900: #1c1917;
+        --p-stone-950: #0c0a09;
+        --p-neutral-50: #fafafa;
+        --p-neutral-100: #f5f5f5;
+        --p-neutral-200: #e5e5e5;
+        --p-neutral-300: #d4d4d4;
+        --p-neutral-400: #a3a3a3;
+        --p-neutral-500: #737373;
+        --p-neutral-600: #525252;
+        --p-neutral-700: #404040;
+        --p-neutral-800: #262626;
+        --p-neutral-900: #171717;
+        --p-neutral-950: #0a0a0a;
+        --p-zinc-50: #fafafa;
+        --p-zinc-100: #f4f4f5;
+        --p-zinc-200: #e4e4e7;
+        --p-zinc-300: #d4d4d8;
+        --p-zinc-400: #a1a1aa;
+        --p-zinc-500: #71717a;
+        --p-zinc-600: #52525b;
+        --p-zinc-700: #3f3f46;
+        --p-zinc-800: #27272a;
+        --p-zinc-900: #18181b;
+        --p-zinc-950: #09090b;
+        --p-gray-50: #f9fafb;
+        --p-gray-100: #f3f4f6;
+        --p-gray-200: #e5e7eb;
+        --p-gray-300: #d1d5db;
+        --p-gray-400: #9ca3af;
+        --p-gray-500: #6b7280;
+        --p-gray-600: #4b5563;
+        --p-gray-700: #374151;
+        --p-gray-800: #1f2937;
+        --p-gray-900: #111827;
+        --p-gray-950: #030712;
+        --p-slate-50: #f8fafc;
+        --p-slate-100: #f1f5f9;
+        --p-slate-200: #e2e8f0;
+        --p-slate-300: #cbd5e1;
+        --p-slate-400: #94a3b8;
+        --p-slate-500: #64748b;
+        --p-slate-600: #475569;
+        --p-slate-700: #334155;
+        --p-slate-800: #1e293b;
+        --p-slate-900: #0f172a;
+        --p-slate-950: #020617;
+        --p-rose-50: #fff1f2;
+        --p-rose-100: #ffe4e6;
+        --p-rose-200: #fecdd3;
+        --p-rose-300: #fda4af;
+        --p-rose-400: #fb7185;
+        --p-rose-500: #f43f5e;
+        --p-rose-600: #e11d48;
+        --p-rose-700: #be123c;
+        --p-rose-800: #9f1239;
+        --p-rose-900: #881337;
+        --p-rose-950: #4c0519;
+        --p-pink-50: #fdf2f8;
+        --p-pink-100: #fce7f3;
+        --p-pink-200: #fbcfe8;
+        --p-pink-300: #f9a8d4;
+        --p-pink-400: #f472b6;
+        --p-pink-500: #ec4899;
+        --p-pink-600: #db2777;
+        --p-pink-700: #be185d;
+        --p-pink-800: #9d174d;
+        --p-pink-900: #831843;
+        --p-pink-950: #500724;
+        --p-fuchsia-50: #fdf4ff;
+        --p-fuchsia-100: #fae8ff;
+        --p-fuchsia-200: #f5d0fe;
+        --p-fuchsia-300: #f0abfc;
+        --p-fuchsia-400: #e879f9;
+        --p-fuchsia-500: #d946ef;
+        --p-fuchsia-600: #c026d3;
+        --p-fuchsia-700: #a21caf;
+        --p-fuchsia-800: #86198f;
+        --p-fuchsia-900: #701a75;
+        --p-fuchsia-950: #4a044e;
+        --p-purple-50: #faf5ff;
+        --p-purple-100: #f3e8ff;
+        --p-purple-200: #e9d5ff;
+        --p-purple-300: #d8b4fe;
+        --p-purple-400: #c084fc;
+        --p-purple-500: #a855f7;
+        --p-purple-600: #9333ea;
+        --p-purple-700: #7e22ce;
+        --p-purple-800: #6b21a8;
+        --p-purple-900: #581c87;
+        --p-purple-950: #3b0764;
+        --p-violet-50: #f5f3ff;
+        --p-violet-100: #ede9fe;
+        --p-violet-200: #ddd6fe;
+        --p-violet-300: #c4b5fd;
+        --p-violet-400: #a78bfa;
+        --p-violet-500: #8b5cf6;
+        --p-violet-600: #7c3aed;
+        --p-violet-700: #6d28d9;
+        --p-violet-800: #5b21b6;
+        --p-violet-900: #4c1d95;
+        --p-violet-950: #2e1065;
+        --p-indigo-50: #eef2ff;
+        --p-indigo-100: #e0e7ff;
+        --p-indigo-200: #c7d2fe;
+        --p-indigo-300: #a5b4fc;
+        --p-indigo-400: #818cf8;
+        --p-indigo-500: #6366f1;
+        --p-indigo-600: #4f46e5;
+        --p-indigo-700: #4338ca;
+        --p-indigo-800: #3730a3;
+        --p-indigo-900: #312e81;
+        --p-indigo-950: #1e1b4b;
+        --p-blue-50: #eff6ff;
+        --p-blue-100: #dbeafe;
+        --p-blue-200: #bfdbfe;
+        --p-blue-300: #93c5fd;
+        --p-blue-400: #60a5fa;
+        --p-blue-500: #3b82f6;
+        --p-blue-600: #2563eb;
+        --p-blue-700: #1d4ed8;
+        --p-blue-800: #1e40af;
+        --p-blue-900: #1e3a8a;
+        --p-blue-950: #172554;
+        --p-sky-50: #f0f9ff;
+        --p-sky-100: #e0f2fe;
+        --p-sky-200: #bae6fd;
+        --p-sky-300: #7dd3fc;
+        --p-sky-400: #38bdf8;
+        --p-sky-500: #0ea5e9;
+        --p-sky-600: #0284c7;
+        --p-sky-700: #0369a1;
+        --p-sky-800: #075985;
+        --p-sky-900: #0c4a6e;
+        --p-sky-950: #082f49;
+        --p-cyan-50: #ecfeff;
+        --p-cyan-100: #cffafe;
+        --p-cyan-200: #a5f3fc;
+        --p-cyan-300: #67e8f9;
+        --p-cyan-400: #22d3ee;
+        --p-cyan-500: #06b6d4;
+        --p-cyan-600: #0891b2;
+        --p-cyan-700: #0e7490;
+        --p-cyan-800: #155e75;
+        --p-cyan-900: #164e63;
+        --p-cyan-950: #083344;
+        --p-teal-50: #f0fdfa;
+        --p-teal-100: #ccfbf1;
+        --p-teal-200: #99f6e4;
+        --p-teal-300: #5eead4;
+        --p-teal-400: #2dd4bf;
+        --p-teal-500: #14b8a6;
+        --p-teal-600: #0d9488;
+        --p-teal-700: #0f766e;
+        --p-teal-800: #115e59;
+        --p-teal-900: #134e4a;
+        --p-teal-950: #042f2e;
+        --p-yellow-50: #fefce8;
+        --p-yellow-100: #fef9c3;
+        --p-yellow-200: #fef08a;
+        --p-yellow-300: #fde047;
+        --p-yellow-400: #facc15;
+        --p-yellow-500: #eab308;
+        --p-yellow-600: #ca8a04;
+        --p-yellow-700: #a16207;
+        --p-yellow-800: #854d0e;
+        --p-yellow-900: #713f12;
+        --p-yellow-950: #422006;
+        --p-amber-50: #fffbeb;
+        --p-amber-100: #fef3c7;
+        --p-amber-200: #fde68a;
+        --p-amber-300: #fcd34d;
+        --p-amber-400: #fbbf24;
+        --p-amber-500: #f59e0b;
+        --p-amber-600: #d97706;
+        --p-amber-700: #b45309;
+        --p-amber-800: #92400e;
+        --p-amber-900: #78350f;
+        --p-amber-950: #451a03;
+        --p-orange-50: #fff7ed;
+        --p-orange-100: #ffedd5;
+        --p-orange-200: #fed7aa;
+        --p-orange-300: #fdba74;
+        --p-orange-400: #fb923c;
+        --p-orange-500: #f97316;
+        --p-orange-600: #ea580c;
+        --p-orange-700: #c2410c;
+        --p-orange-800: #9a3412;
+        --p-orange-900: #7c2d12;
+        --p-orange-950: #431407;
+        --p-red-50: #fef2f2;
+        --p-red-100: #fee2e2;
+        --p-red-200: #fecaca;
+        --p-red-300: #fca5a5;
+        --p-red-400: #f87171;
+        --p-red-500: #ef4444;
+        --p-red-600: #dc2626;
+        --p-red-700: #b91c1c;
+        --p-red-800: #991b1b;
+        --p-red-900: #7f1d1d;
+        --p-red-950: #450a0a;
+        --p-lime-50: #f7fee7;
+        --p-lime-100: #ecfccb;
+        --p-lime-200: #d9f99d;
+        --p-lime-300: #bef264;
+        --p-lime-400: #a3e635;
+        --p-lime-500: #84cc16;
+        --p-lime-600: #65a30d;
+        --p-lime-700: #4d7c0f;
+        --p-lime-800: #3f6212;
+        --p-lime-900: #365314;
+        --p-lime-950: #1a2e05;
+        --p-green-50: #f0fdf4;
+        --p-green-100: #dcfce7;
+        --p-green-200: #bbf7d0;
+        --p-green-300: #86efac;
+        --p-green-400: #4ade80;
+        --p-green-500: #22c55e;
+        --p-green-600: #16a34a;
+        --p-green-700: #15803d;
+        --p-green-800: #166534;
+        --p-green-900: #14532d;
+        --p-green-950: #052e16;
+        --p-emerald-50: #ecfdf5;
+        --p-emerald-100: #d1fae5;
+        --p-emerald-200: #a7f3d0;
+        --p-emerald-300: #6ee7b7;
+        --p-emerald-400: #34d399;
+        --p-emerald-500: #10b981;
+        --p-emerald-600: #059669;
+        --p-emerald-700: #047857;
+        --p-emerald-800: #065f46;
+        --p-emerald-900: #064e3b;
+        --p-emerald-950: #022c22;
+        --p-border-radius-none: 0;
+        --p-border-radius-xs: 2px;
+        --p-border-radius-sm: 4px;
+        --p-border-radius-md: 6px;
+        --p-border-radius-lg: 8px;
+        --p-border-radius-xl: 12px;
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="semantic-variables">
+      :root, :host {
+        --p-transition-duration: 0.2s;
+        --p-disabled-opacity: 0.6;
+        --p-icon-size: 1rem;
+        --p-anchor-gutter: 2px;
+        --p-overlay-navigation-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --p-overlay-modal-border-radius: var(--p-border-radius-xl);
+        --p-overlay-modal-padding: 1.25rem;
+        --p-overlay-modal-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        --p-overlay-popover-border-radius: var(--p-border-radius-md);
+        --p-overlay-popover-padding: 0.75rem;
+        --p-overlay-popover-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --p-overlay-select-border-radius: var(--p-border-radius-md);
+        --p-overlay-select-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --p-navigation-submenu-icon-size: 0.875rem;
+        --p-navigation-submenu-label-padding: 0.5rem 0.75rem;
+        --p-navigation-submenu-label-font-weight: 600;
+        --p-navigation-item-padding: 0.5rem 0.75rem;
+        --p-navigation-item-border-radius: var(--p-border-radius-sm);
+        --p-navigation-item-gap: 0.5rem;
+        --p-navigation-list-padding: 0.25rem 0.25rem;
+        --p-navigation-list-gap: 2px;
+        --p-mask-transition-duration: 0.3s;
+        --p-content-border-radius: var(--p-border-radius-md);
+        --p-list-padding: 0.25rem 0.25rem;
+        --p-list-gap: 2px;
+        --p-list-option-group-padding: 0.5rem 0.75rem;
+        --p-list-option-group-font-weight: 600;
+        --p-list-option-padding: 0.5rem 0.75rem;
+        --p-list-option-border-radius: var(--p-border-radius-sm);
+        --p-list-header-padding: 0.5rem 1rem 0.25rem 1rem;
+        --p-form-field-padding-x: 0.75rem;
+        --p-form-field-padding-y: 0.5rem;
+        --p-form-field-border-radius: var(--p-border-radius-md);
+        --p-form-field-transition-duration: var(--p-transition-duration);
+        --p-form-field-focus-ring-width: 0;
+        --p-form-field-focus-ring-style: none;
+        --p-form-field-focus-ring-color: transparent;
+        --p-form-field-focus-ring-offset: 0;
+        --p-form-field-focus-ring-shadow: none;
+        --p-form-field-lg-font-size: 1.125rem;
+        --p-form-field-lg-padding-x: 0.875rem;
+        --p-form-field-lg-padding-y: 0.625rem;
+        --p-form-field-sm-font-size: 0.875rem;
+        --p-form-field-sm-padding-x: 0.625rem;
+        --p-form-field-sm-padding-y: 0.375rem;
+        --p-primary-50: #eef3ff;
+        --p-primary-100: #d9e4ff;
+        --p-primary-150: #c8d8ff;
+        --p-primary-200: #b7ccff;
+        --p-primary-250: #a2bdff;
+        --p-primary-300: #8caeff;
+        --p-primary-350: #769eff;
+        --p-primary-400: #5f88ff;
+        --p-primary-450: #456fe3;
+        --p-primary-500: #2755b6;
+        --p-primary-550: #244faa;
+        --p-primary-600: #2149a0;
+        --p-primary-650: #1e4391;
+        --p-primary-700: #1b3c82;
+        --p-primary-750: #183674;
+        --p-primary-800: #152f66;
+        --p-primary-850: #132959;
+        --p-primary-900: #10244d;
+        --p-primary-950: #09152e;
+        --p-focus-ring-width: 1px;
+        --p-focus-ring-style: solid;
+        --p-focus-ring-color: var(--p-primary-color);
+        --p-focus-ring-offset: 2px;
+        --p-focus-ring-shadow: none;
+        --p-navigation-submenu-icon-color: var(--p-surface-400);
+        --p-navigation-submenu-icon-focus-color: var(--p-surface-500);
+        --p-navigation-submenu-icon-active-color: var(--p-surface-500);
+        --p-navigation-submenu-label-background: transparent;
+        --p-navigation-submenu-label-color: var(--p-text-muted-color);
+        --p-navigation-item-focus-background: var(--p-surface-100);
+        --p-navigation-item-active-background: var(--p-surface-100);
+        --p-navigation-item-color: var(--p-text-color);
+        --p-navigation-item-focus-color: var(--p-text-hover-color);
+        --p-navigation-item-active-color: var(--p-text-hover-color);
+        --p-navigation-item-icon-color: var(--p-surface-400);
+        --p-navigation-item-icon-focus-color: var(--p-surface-500);
+        --p-navigation-item-icon-active-color: var(--p-surface-500);
+        --p-list-option-group-background: transparent;
+        --p-list-option-group-color: var(--p-text-muted-color);
+        --p-list-option-focus-background: var(--p-surface-100);
+        --p-list-option-selected-background: var(--p-highlight-background);
+        --p-list-option-selected-focus-background: var(--p-highlight-focus-background);
+        --p-list-option-color: var(--p-text-color);
+        --p-list-option-focus-color: var(--p-text-hover-color);
+        --p-list-option-selected-color: var(--p-highlight-color);
+        --p-list-option-selected-focus-color: var(--p-highlight-focus-color);
+        --p-list-option-icon-color: var(--p-surface-400);
+        --p-list-option-icon-focus-color: var(--p-surface-500);
+        --p-overlay-modal-background: var(--p-surface-0);
+        --p-overlay-modal-border-color: var(--p-surface-200);
+        --p-overlay-modal-color: var(--p-text-color);
+        --p-overlay-popover-background: var(--p-surface-0);
+        --p-overlay-popover-border-color: var(--p-surface-200);
+        --p-overlay-popover-color: var(--p-text-color);
+        --p-overlay-select-background: var(--p-surface-0);
+        --p-overlay-select-border-color: var(--p-surface-200);
+        --p-overlay-select-color: var(--p-text-color);
+        --p-content-background: var(--p-surface-0);
+        --p-content-hover-background: var(--p-surface-100);
+        --p-content-border-color: var(--p-surface-200);
+        --p-content-color: var(--p-text-color);
+        --p-content-hover-color: var(--p-text-hover-color);
+        --p-text-color: var(--p-surface-700);
+        --p-text-hover-color: var(--p-surface-800);
+        --p-text-muted-color: var(--p-surface-500);
+        --p-text-hover-muted-color: var(--p-surface-600);
+        --p-form-field-background: var(--p-surface-0);
+        --p-form-field-disabled-background: var(--p-surface-200);
+        --p-form-field-filled-background: var(--p-surface-50);
+        --p-form-field-filled-hover-background: var(--p-surface-50);
+        --p-form-field-filled-focus-background: var(--p-surface-50);
+        --p-form-field-border-color: var(--p-surface-300);
+        --p-form-field-hover-border-color: var(--p-surface-400);
+        --p-form-field-focus-border-color: var(--p-primary-color);
+        --p-form-field-invalid-border-color: var(--p-red-400);
+        --p-form-field-color: var(--p-surface-700);
+        --p-form-field-disabled-color: var(--p-surface-500);
+        --p-form-field-placeholder-color: var(--p-surface-500);
+        --p-form-field-invalid-placeholder-color: var(--p-red-600);
+        --p-form-field-float-label-color: var(--p-surface-500);
+        --p-form-field-float-label-focus-color: var(--p-primary-600);
+        --p-form-field-float-label-active-color: var(--p-surface-500);
+        --p-form-field-float-label-invalid-color: var(--p-form-field-invalid-placeholder-color);
+        --p-form-field-icon-color: var(--p-surface-400);
+        --p-form-field-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05);
+        --p-mask-background: rgba(0, 0, 0, 0.4);
+        --p-mask-color: var(--p-surface-200);
+        --p-highlight-background: var(--p-primary-50);
+        --p-highlight-focus-background: var(--p-primary-100);
+        --p-highlight-color: var(--p-primary-700);
+        --p-highlight-focus-color: var(--p-primary-800);
+        --p-primary-color: var(--p-primary-500);
+        --p-primary-contrast-color: #ffffff;
+        --p-primary-hover-color: var(--p-primary-600);
+        --p-primary-active-color: var(--p-primary-700);
+        --p-surface-0: #ffffff;
+        --p-surface-50: var(--p-slate-50);
+        --p-surface-100: var(--p-slate-100);
+        --p-surface-200: var(--p-slate-200);
+        --p-surface-300: var(--p-slate-300);
+        --p-surface-400: var(--p-slate-400);
+        --p-surface-500: var(--p-slate-500);
+        --p-surface-600: var(--p-slate-600);
+        --p-surface-700: var(--p-slate-700);
+        --p-surface-800: var(--p-slate-800);
+        --p-surface-900: var(--p-slate-900);
+        --p-surface-950: var(--p-slate-950);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="global-variables">
+      :root, :host {
+        color-scheme: light
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="global-style">
+      *, ::before, ::after {
+        box-sizing: border-box;
+      }
+
+      .p-collapsible-enter-active {
+        animation: p-animate-collapsible-expand 0.2s ease-out;
+        overflow: hidden;
+      }
+
+      .p-collapsible-leave-active {
+        animation: p-animate-collapsible-collapse 0.2s ease-out;
+        overflow: hidden;
+      }
+
+      @keyframes p-animate-collapsible-expand {
+        from {
+          grid-template-rows: 0fr;
+        }
+
+        to {
+          grid-template-rows: 1fr;
+        }
+      }
+
+      @keyframes p-animate-collapsible-collapse {
+        from {
+          grid-template-rows: 1fr;
+        }
+
+        to {
+          grid-template-rows: 0fr;
+        }
+      }
+
+      .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+      }
+
+      .p-disabled, .p-component:disabled {
+        opacity: var(--p-disabled-opacity);
+      }
+
+      .pi {
+        font-size: var(--p-icon-size);
+      }
+
+      .p-icon {
+        width: var(--p-icon-size);
+        height: var(--p-icon-size);
+      }
+
+      .p-overlay-mask {
+        background: var(--px-mask-background, var(--p-mask-background));
+        color: var(--p-mask-color);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .p-overlay-mask-enter-active {
+        animation: p-animate-overlay-mask-enter var(--p-mask-transition-duration) forwards;
+      }
+
+      .p-overlay-mask-leave-active {
+        animation: p-animate-overlay-mask-leave var(--p-mask-transition-duration) forwards;
+      }
+
+      @keyframes p-animate-overlay-mask-enter {
+        from {
+          background: transparent;
+        }
+
+        to {
+          background: var(--px-mask-background, var(--p-mask-background));
+        }
+      }
+
+      @keyframes p-animate-overlay-mask-leave {
+        from {
+          background: var(--px-mask-background, var(--p-mask-background));
+        }
+
+        to {
+          background: transparent;
+        }
+      }
+
+      .p-anchored-overlay-enter-active {
+        animation: p-animate-anchored-overlay-enter 300ms cubic-bezier(.19, 1, .22, 1);
+      }
+
+      .p-anchored-overlay-leave-active {
+        animation: p-animate-anchored-overlay-leave 300ms cubic-bezier(.19, 1, .22, 1);
+      }
+
+      @keyframes p-animate-anchored-overlay-enter {
+        from {
+          opacity: 0;
+          transform: scale(0.93);
+        }
+      }
+
+      @keyframes p-animate-anchored-overlay-leave {
+        to {
+          opacity: 0;
+          transform: scale(0.93);
+        }
+      }
+
+      li.p-autocomplete-option, div.p-cascadeselect-option-content, li.p-listbox-option, li.p-multiselect-option, li.p-select-option, li.p-listbox-option, div.p-tree-node-content, li.p-datatable-filter-constraint, .p-datatable .p-datatable-tbody > tr, .p-treetable .p-treetable-tbody > tr, div.p-menu-item-content, div.p-tieredmenu-item-content, div.p-contextmenu-item-content, div.p-menubar-item-content, div.p-megamenu-item-content, div.p-panelmenu-header-content, div.p-panelmenu-item-content, th.p-datatable-header-cell, th.p-treetable-header-cell, thead.p-datatable-thead > tr > th, .p-treetable thead.p-treetable-thead > tr > th {
+        transition: none;
+      }
+    </style>
+    <meta name="description" content="Discover apartments, villas, and investment opportunities in the best districts of Istanbul with guidance from local real estate experts.">
+    <meta name="keywords" content="undefined">
+    <meta property="og:title" content="Find Your Perfect Property in Istanbul">
+    <meta property="og:description" content="Discover apartments, villas, and investment opportunities in the best districts of Istanbul with guidance from local real estate experts.">
+    <meta property="og:image" content="undefined">
+    <meta property="twitter:title" content="Find Your Perfect Property in Istanbul">
+    <meta property="twitter:description" content="Discover apartments, villas, and investment opportunities in the best districts of Istanbul with guidance from local real estate experts.">
+    <meta property="twitter:image" content="undefined">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <link rel="canonical" href="">
+    <style type="text/css" data-primeng-style-id="base">
+      .p-hidden-accessible {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      .p-hidden-accessible input, .p-hidden-accessible select {
+        transform: scale(0);
+      }
+
+      .p-overflow-hidden {
+        overflow: hidden;
+        padding-right: var(--p-scrollbar-width);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="button-variables">
+      :root, :host {
+        --p-button-border-radius: var(--p-form-field-border-radius);
+        --p-button-rounded-border-radius: 2rem;
+        --p-button-gap: 0.5rem;
+        --p-button-padding-x: var(--p-form-field-padding-x);
+        --p-button-padding-y: var(--p-form-field-padding-y);
+        --p-button-icon-only-width: 2.5rem;
+        --p-button-raised-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        --p-button-badge-size: 1rem;
+        --p-button-transition-duration: var(--p-form-field-transition-duration);
+        --p-button-focus-ring-width: var(--p-focus-ring-width);
+        --p-button-focus-ring-style: var(--p-focus-ring-style);
+        --p-button-focus-ring-offset: var(--p-focus-ring-offset);
+        --p-button-label-font-weight: 500;
+        --p-button-lg-font-size: var(--p-form-field-lg-font-size);
+        --p-button-lg-padding-x: var(--p-form-field-lg-padding-x);
+        --p-button-lg-padding-y: var(--p-form-field-lg-padding-y);
+        --p-button-lg-icon-only-width: 3rem;
+        --p-button-sm-font-size: var(--p-form-field-sm-font-size);
+        --p-button-sm-padding-x: var(--p-form-field-sm-padding-x);
+        --p-button-sm-padding-y: var(--p-form-field-sm-padding-y);
+        --p-button-sm-icon-only-width: 2rem;
+        --p-button-link-color: var(--p-primary-color);
+        --p-button-link-hover-color: var(--p-primary-color);
+        --p-button-link-active-color: var(--p-primary-color);
+        --p-button-text-plain-hover-background: var(--p-surface-50);
+        --p-button-text-plain-active-background: var(--p-surface-100);
+        --p-button-text-plain-color: var(--p-surface-700);
+        --p-button-text-contrast-hover-background: var(--p-surface-50);
+        --p-button-text-contrast-active-background: var(--p-surface-100);
+        --p-button-text-contrast-color: var(--p-surface-950);
+        --p-button-text-danger-hover-background: var(--p-red-50);
+        --p-button-text-danger-active-background: var(--p-red-100);
+        --p-button-text-danger-color: var(--p-red-500);
+        --p-button-text-help-hover-background: var(--p-purple-50);
+        --p-button-text-help-active-background: var(--p-purple-100);
+        --p-button-text-help-color: var(--p-purple-500);
+        --p-button-text-warn-hover-background: var(--p-orange-50);
+        --p-button-text-warn-active-background: var(--p-orange-100);
+        --p-button-text-warn-color: var(--p-orange-500);
+        --p-button-text-info-hover-background: var(--p-sky-50);
+        --p-button-text-info-active-background: var(--p-sky-100);
+        --p-button-text-info-color: var(--p-sky-500);
+        --p-button-text-success-hover-background: var(--p-green-50);
+        --p-button-text-success-active-background: var(--p-green-100);
+        --p-button-text-success-color: var(--p-green-500);
+        --p-button-text-secondary-hover-background: var(--p-surface-50);
+        --p-button-text-secondary-active-background: var(--p-surface-100);
+        --p-button-text-secondary-color: var(--p-surface-500);
+        --p-button-text-primary-hover-background: var(--p-primary-50);
+        --p-button-text-primary-active-background: var(--p-primary-100);
+        --p-button-text-primary-color: var(--p-primary-color);
+        --p-button-outlined-plain-hover-background: var(--p-surface-50);
+        --p-button-outlined-plain-active-background: var(--p-surface-100);
+        --p-button-outlined-plain-border-color: var(--p-surface-200);
+        --p-button-outlined-plain-color: var(--p-surface-700);
+        --p-button-outlined-contrast-hover-background: var(--p-surface-50);
+        --p-button-outlined-contrast-active-background: var(--p-surface-100);
+        --p-button-outlined-contrast-border-color: var(--p-surface-700);
+        --p-button-outlined-contrast-color: var(--p-surface-950);
+        --p-button-outlined-danger-hover-background: var(--p-red-50);
+        --p-button-outlined-danger-active-background: var(--p-red-100);
+        --p-button-outlined-danger-border-color: var(--p-red-200);
+        --p-button-outlined-danger-color: var(--p-red-500);
+        --p-button-outlined-help-hover-background: var(--p-purple-50);
+        --p-button-outlined-help-active-background: var(--p-purple-100);
+        --p-button-outlined-help-border-color: var(--p-purple-200);
+        --p-button-outlined-help-color: var(--p-purple-500);
+        --p-button-outlined-warn-hover-background: var(--p-orange-50);
+        --p-button-outlined-warn-active-background: var(--p-orange-100);
+        --p-button-outlined-warn-border-color: var(--p-orange-200);
+        --p-button-outlined-warn-color: var(--p-orange-500);
+        --p-button-outlined-info-hover-background: var(--p-sky-50);
+        --p-button-outlined-info-active-background: var(--p-sky-100);
+        --p-button-outlined-info-border-color: var(--p-sky-200);
+        --p-button-outlined-info-color: var(--p-sky-500);
+        --p-button-outlined-success-hover-background: var(--p-green-50);
+        --p-button-outlined-success-active-background: var(--p-green-100);
+        --p-button-outlined-success-border-color: var(--p-green-200);
+        --p-button-outlined-success-color: var(--p-green-500);
+        --p-button-outlined-secondary-hover-background: var(--p-surface-50);
+        --p-button-outlined-secondary-active-background: var(--p-surface-100);
+        --p-button-outlined-secondary-border-color: var(--p-surface-200);
+        --p-button-outlined-secondary-color: var(--p-surface-500);
+        --p-button-outlined-primary-hover-background: var(--p-primary-50);
+        --p-button-outlined-primary-active-background: var(--p-primary-100);
+        --p-button-outlined-primary-border-color: var(--p-primary-200);
+        --p-button-outlined-primary-color: var(--p-primary-color);
+        --p-button-contrast-background: var(--p-surface-950);
+        --p-button-contrast-hover-background: var(--p-surface-900);
+        --p-button-contrast-active-background: var(--p-surface-800);
+        --p-button-contrast-border-color: var(--p-surface-950);
+        --p-button-contrast-hover-border-color: var(--p-surface-900);
+        --p-button-contrast-active-border-color: var(--p-surface-800);
+        --p-button-contrast-color: var(--p-surface-0);
+        --p-button-contrast-hover-color: var(--p-surface-0);
+        --p-button-contrast-active-color: var(--p-surface-0);
+        --p-button-contrast-focus-ring-color: var(--p-surface-950);
+        --p-button-contrast-focus-ring-shadow: none;
+        --p-button-danger-background: var(--p-red-500);
+        --p-button-danger-hover-background: var(--p-red-600);
+        --p-button-danger-active-background: var(--p-red-700);
+        --p-button-danger-border-color: var(--p-red-500);
+        --p-button-danger-hover-border-color: var(--p-red-600);
+        --p-button-danger-active-border-color: var(--p-red-700);
+        --p-button-danger-color: #ffffff;
+        --p-button-danger-hover-color: #ffffff;
+        --p-button-danger-active-color: #ffffff;
+        --p-button-danger-focus-ring-color: var(--p-red-500);
+        --p-button-danger-focus-ring-shadow: none;
+        --p-button-help-background: var(--p-purple-500);
+        --p-button-help-hover-background: var(--p-purple-600);
+        --p-button-help-active-background: var(--p-purple-700);
+        --p-button-help-border-color: var(--p-purple-500);
+        --p-button-help-hover-border-color: var(--p-purple-600);
+        --p-button-help-active-border-color: var(--p-purple-700);
+        --p-button-help-color: #ffffff;
+        --p-button-help-hover-color: #ffffff;
+        --p-button-help-active-color: #ffffff;
+        --p-button-help-focus-ring-color: var(--p-purple-500);
+        --p-button-help-focus-ring-shadow: none;
+        --p-button-warn-background: var(--p-orange-500);
+        --p-button-warn-hover-background: var(--p-orange-600);
+        --p-button-warn-active-background: var(--p-orange-700);
+        --p-button-warn-border-color: var(--p-orange-500);
+        --p-button-warn-hover-border-color: var(--p-orange-600);
+        --p-button-warn-active-border-color: var(--p-orange-700);
+        --p-button-warn-color: #ffffff;
+        --p-button-warn-hover-color: #ffffff;
+        --p-button-warn-active-color: #ffffff;
+        --p-button-warn-focus-ring-color: var(--p-orange-500);
+        --p-button-warn-focus-ring-shadow: none;
+        --p-button-success-background: var(--p-green-500);
+        --p-button-success-hover-background: var(--p-green-600);
+        --p-button-success-active-background: var(--p-green-700);
+        --p-button-success-border-color: var(--p-green-500);
+        --p-button-success-hover-border-color: var(--p-green-600);
+        --p-button-success-active-border-color: var(--p-green-700);
+        --p-button-success-color: #ffffff;
+        --p-button-success-hover-color: #ffffff;
+        --p-button-success-active-color: #ffffff;
+        --p-button-success-focus-ring-color: var(--p-green-500);
+        --p-button-success-focus-ring-shadow: none;
+        --p-button-info-background: var(--p-sky-500);
+        --p-button-info-hover-background: var(--p-sky-600);
+        --p-button-info-active-background: var(--p-sky-700);
+        --p-button-info-border-color: var(--p-sky-500);
+        --p-button-info-hover-border-color: var(--p-sky-600);
+        --p-button-info-active-border-color: var(--p-sky-700);
+        --p-button-info-color: #ffffff;
+        --p-button-info-hover-color: #ffffff;
+        --p-button-info-active-color: #ffffff;
+        --p-button-info-focus-ring-color: var(--p-sky-500);
+        --p-button-info-focus-ring-shadow: none;
+        --p-button-secondary-background: var(--p-surface-100);
+        --p-button-secondary-hover-background: var(--p-surface-200);
+        --p-button-secondary-active-background: var(--p-surface-300);
+        --p-button-secondary-border-color: var(--p-surface-100);
+        --p-button-secondary-hover-border-color: var(--p-surface-200);
+        --p-button-secondary-active-border-color: var(--p-surface-300);
+        --p-button-secondary-color: var(--p-surface-600);
+        --p-button-secondary-hover-color: var(--p-surface-700);
+        --p-button-secondary-active-color: var(--p-surface-800);
+        --p-button-secondary-focus-ring-color: var(--p-surface-600);
+        --p-button-secondary-focus-ring-shadow: none;
+        --p-button-primary-background: var(--p-primary-color);
+        --p-button-primary-hover-background: var(--p-primary-hover-color);
+        --p-button-primary-active-background: var(--p-primary-active-color);
+        --p-button-primary-border-color: var(--p-primary-color);
+        --p-button-primary-hover-border-color: var(--p-primary-hover-color);
+        --p-button-primary-active-border-color: var(--p-primary-active-color);
+        --p-button-primary-color: var(--p-primary-contrast-color);
+        --p-button-primary-hover-color: var(--p-primary-contrast-color);
+        --p-button-primary-active-color: var(--p-primary-contrast-color);
+        --p-button-primary-focus-ring-color: var(--p-primary-color);
+        --p-button-primary-focus-ring-shadow: none;
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="button-style">
+      .p-button {
+        display: inline-flex;
+        cursor: pointer;
+        user-select: none;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        color: var(--p-button-primary-color);
+        background: var(--p-button-primary-background);
+        border: 1px solid var(--p-button-primary-border-color);
+        padding: var(--p-button-padding-y) var(--p-button-padding-x);
+        font-size: 1rem;
+        font-family: inherit;
+        font-feature-settings: inherit;
+        transition: background var(--p-button-transition-duration), color var(--p-button-transition-duration), border-color var(--p-button-transition-duration), outline-color var(--p-button-transition-duration), box-shadow var(--p-button-transition-duration);
+        border-radius: var(--p-button-border-radius);
+        outline-color: transparent;
+        gap: var(--p-button-gap);
+      }
+
+      .p-button:disabled {
+        cursor: default;
+      }
+
+      .p-button-icon-right {
+        order: 1;
+      }
+
+      .p-button-icon-right:dir(rtl) {
+        order: -1;
+      }
+
+      .p-button:not(.p-button-vertical) .p-button-icon:not(.p-button-icon-right):dir(rtl) {
+        order: 1;
+      }
+
+      .p-button-icon-bottom {
+        order: 2;
+      }
+
+      .p-button-icon-only {
+        width: var(--p-button-icon-only-width);
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        gap: 0;
+      }
+
+      .p-button-icon-only.p-button-rounded {
+        border-radius: 50%;
+        height: var(--p-button-icon-only-width);
+      }
+
+      .p-button-icon-only .p-button-label {
+        visibility: hidden;
+        width: 0;
+      }
+
+      .p-button-icon-only::after {
+        content: " ";
+        visibility: hidden;
+        width: 0;
+      }
+
+      .p-button-sm {
+        font-size: var(--p-button-sm-font-size);
+        padding: var(--p-button-sm-padding-y) var(--p-button-sm-padding-x);
+      }
+
+      .p-button-sm .p-button-icon {
+        font-size: var(--p-button-sm-font-size);
+      }
+
+      .p-button-sm.p-button-icon-only {
+        width: var(--p-button-sm-icon-only-width);
+      }
+
+      .p-button-sm.p-button-icon-only.p-button-rounded {
+        height: var(--p-button-sm-icon-only-width);
+      }
+
+      .p-button-lg {
+        font-size: var(--p-button-lg-font-size);
+        padding: var(--p-button-lg-padding-y) var(--p-button-lg-padding-x);
+      }
+
+      .p-button-lg .p-button-icon {
+        font-size: var(--p-button-lg-font-size);
+      }
+
+      .p-button-lg.p-button-icon-only {
+        width: var(--p-button-lg-icon-only-width);
+      }
+
+      .p-button-lg.p-button-icon-only.p-button-rounded {
+        height: var(--p-button-lg-icon-only-width);
+      }
+
+      .p-button-vertical {
+        flex-direction: column;
+      }
+
+      .p-button-label {
+        font-weight: var(--p-button-label-font-weight);
+      }
+
+      .p-button-fluid {
+        width: 100%;
+      }
+
+      .p-button-fluid.p-button-icon-only {
+        width: var(--p-button-icon-only-width);
+      }
+
+      .p-button:not(:disabled):hover {
+        background: var(--p-button-primary-hover-background);
+        border: 1px solid var(--p-button-primary-hover-border-color);
+        color: var(--p-button-primary-hover-color);
+      }
+
+      .p-button:not(:disabled):active {
+        background: var(--p-button-primary-active-background);
+        border: 1px solid var(--p-button-primary-active-border-color);
+        color: var(--p-button-primary-active-color);
+      }
+
+      .p-button:focus-visible {
+        box-shadow: var(--p-button-primary-focus-ring-shadow);
+        outline: var(--p-button-focus-ring-width) var(--p-button-focus-ring-style) var(--p-button-primary-focus-ring-color);
+        outline-offset: var(--p-button-focus-ring-offset);
+      }
+
+      .p-button .p-badge {
+        min-width: var(--p-button-badge-size);
+        height: var(--p-button-badge-size);
+        line-height: var(--p-button-badge-size);
+      }
+
+      .p-button-raised {
+        box-shadow: var(--p-button-raised-shadow);
+      }
+
+      .p-button-rounded {
+        border-radius: var(--p-button-rounded-border-radius);
+      }
+
+      .p-button-secondary {
+        background: var(--p-button-secondary-background);
+        border: 1px solid var(--p-button-secondary-border-color);
+        color: var(--p-button-secondary-color);
+      }
+
+      .p-button-secondary:not(:disabled):hover {
+        background: var(--p-button-secondary-hover-background);
+        border: 1px solid var(--p-button-secondary-hover-border-color);
+        color: var(--p-button-secondary-hover-color);
+      }
+
+      .p-button-secondary:not(:disabled):active {
+        background: var(--p-button-secondary-active-background);
+        border: 1px solid var(--p-button-secondary-active-border-color);
+        color: var(--p-button-secondary-active-color);
+      }
+
+      .p-button-secondary:focus-visible {
+        outline-color: var(--p-button-secondary-focus-ring-color);
+        box-shadow: var(--p-button-secondary-focus-ring-shadow);
+      }
+
+      .p-button-success {
+        background: var(--p-button-success-background);
+        border: 1px solid var(--p-button-success-border-color);
+        color: var(--p-button-success-color);
+      }
+
+      .p-button-success:not(:disabled):hover {
+        background: var(--p-button-success-hover-background);
+        border: 1px solid var(--p-button-success-hover-border-color);
+        color: var(--p-button-success-hover-color);
+      }
+
+      .p-button-success:not(:disabled):active {
+        background: var(--p-button-success-active-background);
+        border: 1px solid var(--p-button-success-active-border-color);
+        color: var(--p-button-success-active-color);
+      }
+
+      .p-button-success:focus-visible {
+        outline-color: var(--p-button-success-focus-ring-color);
+        box-shadow: var(--p-button-success-focus-ring-shadow);
+      }
+
+      .p-button-info {
+        background: var(--p-button-info-background);
+        border: 1px solid var(--p-button-info-border-color);
+        color: var(--p-button-info-color);
+      }
+
+      .p-button-info:not(:disabled):hover {
+        background: var(--p-button-info-hover-background);
+        border: 1px solid var(--p-button-info-hover-border-color);
+        color: var(--p-button-info-hover-color);
+      }
+
+      .p-button-info:not(:disabled):active {
+        background: var(--p-button-info-active-background);
+        border: 1px solid var(--p-button-info-active-border-color);
+        color: var(--p-button-info-active-color);
+      }
+
+      .p-button-info:focus-visible {
+        outline-color: var(--p-button-info-focus-ring-color);
+        box-shadow: var(--p-button-info-focus-ring-shadow);
+      }
+
+      .p-button-warn {
+        background: var(--p-button-warn-background);
+        border: 1px solid var(--p-button-warn-border-color);
+        color: var(--p-button-warn-color);
+      }
+
+      .p-button-warn:not(:disabled):hover {
+        background: var(--p-button-warn-hover-background);
+        border: 1px solid var(--p-button-warn-hover-border-color);
+        color: var(--p-button-warn-hover-color);
+      }
+
+      .p-button-warn:not(:disabled):active {
+        background: var(--p-button-warn-active-background);
+        border: 1px solid var(--p-button-warn-active-border-color);
+        color: var(--p-button-warn-active-color);
+      }
+
+      .p-button-warn:focus-visible {
+        outline-color: var(--p-button-warn-focus-ring-color);
+        box-shadow: var(--p-button-warn-focus-ring-shadow);
+      }
+
+      .p-button-help {
+        background: var(--p-button-help-background);
+        border: 1px solid var(--p-button-help-border-color);
+        color: var(--p-button-help-color);
+      }
+
+      .p-button-help:not(:disabled):hover {
+        background: var(--p-button-help-hover-background);
+        border: 1px solid var(--p-button-help-hover-border-color);
+        color: var(--p-button-help-hover-color);
+      }
+
+      .p-button-help:not(:disabled):active {
+        background: var(--p-button-help-active-background);
+        border: 1px solid var(--p-button-help-active-border-color);
+        color: var(--p-button-help-active-color);
+      }
+
+      .p-button-help:focus-visible {
+        outline-color: var(--p-button-help-focus-ring-color);
+        box-shadow: var(--p-button-help-focus-ring-shadow);
+      }
+
+      .p-button-danger {
+        background: var(--p-button-danger-background);
+        border: 1px solid var(--p-button-danger-border-color);
+        color: var(--p-button-danger-color);
+      }
+
+      .p-button-danger:not(:disabled):hover {
+        background: var(--p-button-danger-hover-background);
+        border: 1px solid var(--p-button-danger-hover-border-color);
+        color: var(--p-button-danger-hover-color);
+      }
+
+      .p-button-danger:not(:disabled):active {
+        background: var(--p-button-danger-active-background);
+        border: 1px solid var(--p-button-danger-active-border-color);
+        color: var(--p-button-danger-active-color);
+      }
+
+      .p-button-danger:focus-visible {
+        outline-color: var(--p-button-danger-focus-ring-color);
+        box-shadow: var(--p-button-danger-focus-ring-shadow);
+      }
+
+      .p-button-contrast {
+        background: var(--p-button-contrast-background);
+        border: 1px solid var(--p-button-contrast-border-color);
+        color: var(--p-button-contrast-color);
+      }
+
+      .p-button-contrast:not(:disabled):hover {
+        background: var(--p-button-contrast-hover-background);
+        border: 1px solid var(--p-button-contrast-hover-border-color);
+        color: var(--p-button-contrast-hover-color);
+      }
+
+      .p-button-contrast:not(:disabled):active {
+        background: var(--p-button-contrast-active-background);
+        border: 1px solid var(--p-button-contrast-active-border-color);
+        color: var(--p-button-contrast-active-color);
+      }
+
+      .p-button-contrast:focus-visible {
+        outline-color: var(--p-button-contrast-focus-ring-color);
+        box-shadow: var(--p-button-contrast-focus-ring-shadow);
+      }
+
+      .p-button-outlined {
+        background: transparent;
+        border-color: var(--p-button-outlined-primary-border-color);
+        color: var(--p-button-outlined-primary-color);
+      }
+
+      .p-button-outlined:not(:disabled):hover {
+        background: var(--p-button-outlined-primary-hover-background);
+        border-color: var(--p-button-outlined-primary-border-color);
+        color: var(--p-button-outlined-primary-color);
+      }
+
+      .p-button-outlined:not(:disabled):active {
+        background: var(--p-button-outlined-primary-active-background);
+        border-color: var(--p-button-outlined-primary-border-color);
+        color: var(--p-button-outlined-primary-color);
+      }
+
+      .p-button-outlined.p-button-secondary {
+        border-color: var(--p-button-outlined-secondary-border-color);
+        color: var(--p-button-outlined-secondary-color);
+      }
+
+      .p-button-outlined.p-button-secondary:not(:disabled):hover {
+        background: var(--p-button-outlined-secondary-hover-background);
+        border-color: var(--p-button-outlined-secondary-border-color);
+        color: var(--p-button-outlined-secondary-color);
+      }
+
+      .p-button-outlined.p-button-secondary:not(:disabled):active {
+        background: var(--p-button-outlined-secondary-active-background);
+        border-color: var(--p-button-outlined-secondary-border-color);
+        color: var(--p-button-outlined-secondary-color);
+      }
+
+      .p-button-outlined.p-button-success {
+        border-color: var(--p-button-outlined-success-border-color);
+        color: var(--p-button-outlined-success-color);
+      }
+
+      .p-button-outlined.p-button-success:not(:disabled):hover {
+        background: var(--p-button-outlined-success-hover-background);
+        border-color: var(--p-button-outlined-success-border-color);
+        color: var(--p-button-outlined-success-color);
+      }
+
+      .p-button-outlined.p-button-success:not(:disabled):active {
+        background: var(--p-button-outlined-success-active-background);
+        border-color: var(--p-button-outlined-success-border-color);
+        color: var(--p-button-outlined-success-color);
+      }
+
+      .p-button-outlined.p-button-info {
+        border-color: var(--p-button-outlined-info-border-color);
+        color: var(--p-button-outlined-info-color);
+      }
+
+      .p-button-outlined.p-button-info:not(:disabled):hover {
+        background: var(--p-button-outlined-info-hover-background);
+        border-color: var(--p-button-outlined-info-border-color);
+        color: var(--p-button-outlined-info-color);
+      }
+
+      .p-button-outlined.p-button-info:not(:disabled):active {
+        background: var(--p-button-outlined-info-active-background);
+        border-color: var(--p-button-outlined-info-border-color);
+        color: var(--p-button-outlined-info-color);
+      }
+
+      .p-button-outlined.p-button-warn {
+        border-color: var(--p-button-outlined-warn-border-color);
+        color: var(--p-button-outlined-warn-color);
+      }
+
+      .p-button-outlined.p-button-warn:not(:disabled):hover {
+        background: var(--p-button-outlined-warn-hover-background);
+        border-color: var(--p-button-outlined-warn-border-color);
+        color: var(--p-button-outlined-warn-color);
+      }
+
+      .p-button-outlined.p-button-warn:not(:disabled):active {
+        background: var(--p-button-outlined-warn-active-background);
+        border-color: var(--p-button-outlined-warn-border-color);
+        color: var(--p-button-outlined-warn-color);
+      }
+
+      .p-button-outlined.p-button-help {
+        border-color: var(--p-button-outlined-help-border-color);
+        color: var(--p-button-outlined-help-color);
+      }
+
+      .p-button-outlined.p-button-help:not(:disabled):hover {
+        background: var(--p-button-outlined-help-hover-background);
+        border-color: var(--p-button-outlined-help-border-color);
+        color: var(--p-button-outlined-help-color);
+      }
+
+      .p-button-outlined.p-button-help:not(:disabled):active {
+        background: var(--p-button-outlined-help-active-background);
+        border-color: var(--p-button-outlined-help-border-color);
+        color: var(--p-button-outlined-help-color);
+      }
+
+      .p-button-outlined.p-button-danger {
+        border-color: var(--p-button-outlined-danger-border-color);
+        color: var(--p-button-outlined-danger-color);
+      }
+
+      .p-button-outlined.p-button-danger:not(:disabled):hover {
+        background: var(--p-button-outlined-danger-hover-background);
+        border-color: var(--p-button-outlined-danger-border-color);
+        color: var(--p-button-outlined-danger-color);
+      }
+
+      .p-button-outlined.p-button-danger:not(:disabled):active {
+        background: var(--p-button-outlined-danger-active-background);
+        border-color: var(--p-button-outlined-danger-border-color);
+        color: var(--p-button-outlined-danger-color);
+      }
+
+      .p-button-outlined.p-button-contrast {
+        border-color: var(--p-button-outlined-contrast-border-color);
+        color: var(--p-button-outlined-contrast-color);
+      }
+
+      .p-button-outlined.p-button-contrast:not(:disabled):hover {
+        background: var(--p-button-outlined-contrast-hover-background);
+        border-color: var(--p-button-outlined-contrast-border-color);
+        color: var(--p-button-outlined-contrast-color);
+      }
+
+      .p-button-outlined.p-button-contrast:not(:disabled):active {
+        background: var(--p-button-outlined-contrast-active-background);
+        border-color: var(--p-button-outlined-contrast-border-color);
+        color: var(--p-button-outlined-contrast-color);
+      }
+
+      .p-button-outlined.p-button-plain {
+        border-color: var(--p-button-outlined-plain-border-color);
+        color: var(--p-button-outlined-plain-color);
+      }
+
+      .p-button-outlined.p-button-plain:not(:disabled):hover {
+        background: var(--p-button-outlined-plain-hover-background);
+        border-color: var(--p-button-outlined-plain-border-color);
+        color: var(--p-button-outlined-plain-color);
+      }
+
+      .p-button-outlined.p-button-plain:not(:disabled):active {
+        background: var(--p-button-outlined-plain-active-background);
+        border-color: var(--p-button-outlined-plain-border-color);
+        color: var(--p-button-outlined-plain-color);
+      }
+
+      .p-button-text {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-text-primary-color);
+      }
+
+      .p-button-text:not(:disabled):hover {
+        background: var(--p-button-text-primary-hover-background);
+        border-color: transparent;
+        color: var(--p-button-text-primary-color);
+      }
+
+      .p-button-text:not(:disabled):active {
+        background: var(--p-button-text-primary-active-background);
+        border-color: transparent;
+        color: var(--p-button-text-primary-color);
+      }
+
+      .p-button-text.p-button-secondary {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-text-secondary-color);
+      }
+
+      .p-button-text.p-button-secondary:not(:disabled):hover {
+        background: var(--p-button-text-secondary-hover-background);
+        border-color: transparent;
+        color: var(--p-button-text-secondary-color);
+      }
+
+      .p-button-text.p-button-secondary:not(:disabled):active {
+        background: var(--p-button-text-secondary-active-background);
+        border-color: transparent;
+        color: var(--p-button-text-secondary-color);
+      }
+
+      .p-button-text.p-button-success {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-text-success-color);
+      }
+
+      .p-button-text.p-button-success:not(:disabled):hover {
+        background: var(--p-button-text-success-hover-background);
+        border-color: transparent;
+        color: var(--p-button-text-success-color);
+      }
+
+      .p-button-text.p-button-success:not(:disabled):active {
+        background: var(--p-button-text-success-active-background);
+        border-color: transparent;
+        color: var(--p-button-text-success-color);
+      }
+
+      .p-button-text.p-button-info {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-text-info-color);
+      }
+
+      .p-button-text.p-button-info:not(:disabled):hover {
+        background: var(--p-button-text-info-hover-background);
+        border-color: transparent;
+        color: var(--p-button-text-info-color);
+      }
+
+      .p-button-text.p-button-info:not(:disabled):active {
+        background: var(--p-button-text-info-active-background);
+        border-color: transparent;
+        color: var(--p-button-text-info-color);
+      }
+
+      .p-button-text.p-button-warn {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-text-warn-color);
+      }
+
+      .p-button-text.p-button-warn:not(:disabled):hover {
+        background: var(--p-button-text-warn-hover-background);
+        border-color: transparent;
+        color: var(--p-button-text-warn-color);
+      }
+
+      .p-button-text.p-button-warn:not(:disabled):active {
+        background: var(--p-button-text-warn-active-background);
+        border-color: transparent;
+        color: var(--p-button-text-warn-color);
+      }
+
+      .p-button-text.p-button-help {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-text-help-color);
+      }
+
+      .p-button-text.p-button-help:not(:disabled):hover {
+        background: var(--p-button-text-help-hover-background);
+        border-color: transparent;
+        color: var(--p-button-text-help-color);
+      }
+
+      .p-button-text.p-button-help:not(:disabled):active {
+        background: var(--p-button-text-help-active-background);
+        border-color: transparent;
+        color: var(--p-button-text-help-color);
+      }
+
+      .p-button-text.p-button-danger {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-text-danger-color);
+      }
+
+      .p-button-text.p-button-danger:not(:disabled):hover {
+        background: var(--p-button-text-danger-hover-background);
+        border-color: transparent;
+        color: var(--p-button-text-danger-color);
+      }
+
+      .p-button-text.p-button-danger:not(:disabled):active {
+        background: var(--p-button-text-danger-active-background);
+        border-color: transparent;
+        color: var(--p-button-text-danger-color);
+      }
+
+      .p-button-text.p-button-contrast {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-text-contrast-color);
+      }
+
+      .p-button-text.p-button-contrast:not(:disabled):hover {
+        background: var(--p-button-text-contrast-hover-background);
+        border-color: transparent;
+        color: var(--p-button-text-contrast-color);
+      }
+
+      .p-button-text.p-button-contrast:not(:disabled):active {
+        background: var(--p-button-text-contrast-active-background);
+        border-color: transparent;
+        color: var(--p-button-text-contrast-color);
+      }
+
+      .p-button-text.p-button-plain {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-text-plain-color);
+      }
+
+      .p-button-text.p-button-plain:not(:disabled):hover {
+        background: var(--p-button-text-plain-hover-background);
+        border-color: transparent;
+        color: var(--p-button-text-plain-color);
+      }
+
+      .p-button-text.p-button-plain:not(:disabled):active {
+        background: var(--p-button-text-plain-active-background);
+        border-color: transparent;
+        color: var(--p-button-text-plain-color);
+      }
+
+      .p-button-link {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-link-color);
+      }
+
+      .p-button-link:not(:disabled):hover {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-link-hover-color);
+      }
+
+      .p-button-link:not(:disabled):hover .p-button-label {
+        text-decoration: underline;
+      }
+
+      .p-button-link:not(:disabled):active {
+        background: transparent;
+        border-color: transparent;
+        color: var(--p-button-link-active-color);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="popover-variables">
+      :root, :host {
+        --p-popover-content-padding: var(--p-overlay-popover-padding);
+        --p-popover-background: var(--p-overlay-popover-background);
+        --p-popover-border-color: var(--p-overlay-popover-border-color);
+        --p-popover-color: var(--p-overlay-popover-color);
+        --p-popover-border-radius: var(--p-overlay-popover-border-radius);
+        --p-popover-shadow: var(--p-overlay-popover-shadow);
+        --p-popover-gutter: 10px;
+        --p-popover-arrow-offset: 1.25rem;
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="popover-style">
+      .p-popover {
+        margin-block-start: var(--p-popover-gutter);
+        background: var(--p-popover-background);
+        color: var(--p-popover-color);
+        border: 1px solid var(--p-popover-border-color);
+        border-radius: var(--p-popover-border-radius);
+        box-shadow: var(--p-popover-shadow);
+        will-change: transform;
+      }
+
+      .p-popover-content {
+        padding: var(--p-popover-content-padding);
+      }
+
+      .p-popover-flipped {
+        margin-block-start: calc(var(--p-popover-gutter) * -1);
+        margin-block-end: var(--p-popover-gutter);
+      }
+
+      .p-popover:after, .p-popover:before {
+        bottom: 100%;
+        left: calc(var(--p-popover-arrow-offset) + var(--p-popover-arrow-left));
+        content: ' ';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .p-popover:after {
+        border-width: calc(var(--p-popover-gutter) - 2px);
+        margin-left: calc(-1 * (var(--p-popover-gutter) - 2px));
+        border-style: solid;
+        border-color: transparent;
+        border-bottom-color: var(--p-popover-background);
+      }
+
+      .p-popover:before {
+        border-width: var(--p-popover-gutter);
+        margin-left: calc(-1 * var(--p-popover-gutter));
+        border-style: solid;
+        border-color: transparent;
+        border-bottom-color: var(--p-popover-border-color);
+      }
+
+      .p-popover-flipped:after, .p-popover-flipped:before {
+        bottom: auto;
+        top: 100%;
+      }
+
+      .p-popover.p-popover-flipped:after {
+        border-bottom-color: transparent;
+        border-top-color: var(--p-popover-background);
+      }
+
+      .p-popover.p-popover-flipped:before {
+        border-bottom-color: transparent;
+        border-top-color: var(--p-popover-border-color);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="inputnumber-variables">
+      :root, :host {
+        --p-inputnumber-button-width: 2.5rem;
+        --p-inputnumber-button-border-radius: var(--p-form-field-border-radius);
+        --p-inputnumber-button-vertical-padding: var(--p-form-field-padding-y);
+        --p-inputnumber-transition-duration: var(--p-transition-duration);
+        --p-inputnumber-button-background: transparent;
+        --p-inputnumber-button-hover-background: var(--p-surface-100);
+        --p-inputnumber-button-active-background: var(--p-surface-200);
+        --p-inputnumber-button-border-color: var(--p-form-field-border-color);
+        --p-inputnumber-button-hover-border-color: var(--p-form-field-border-color);
+        --p-inputnumber-button-active-border-color: var(--p-form-field-border-color);
+        --p-inputnumber-button-color: var(--p-surface-400);
+        --p-inputnumber-button-hover-color: var(--p-surface-500);
+        --p-inputnumber-button-active-color: var(--p-surface-600);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="inputnumber-style">
+      .p-inputnumber {
+        display: inline-flex;
+        position: relative;
+      }
+
+      .p-inputnumber-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        cursor: pointer;
+        background: var(--p-inputnumber-button-background);
+        color: var(--p-inputnumber-button-color);
+        width: var(--p-inputnumber-button-width);
+        transition: background var(--p-inputnumber-transition-duration), color var(--p-inputnumber-transition-duration), border-color var(--p-inputnumber-transition-duration), outline-color var(--p-inputnumber-transition-duration);
+      }
+
+      .p-inputnumber-button:disabled {
+        cursor: auto;
+      }
+
+      .p-inputnumber-button:not(:disabled):hover {
+        background: var(--p-inputnumber-button-hover-background);
+        color: var(--p-inputnumber-button-hover-color);
+      }
+
+      .p-inputnumber-button:not(:disabled):active {
+        background: var(--p-inputnumber-button-active-background);
+        color: var(--p-inputnumber-button-active-color);
+      }
+
+      .p-inputnumber-stacked .p-inputnumber-button {
+        position: relative;
+        flex: 1 1 auto;
+        border: 0 none;
+      }
+
+      .p-inputnumber-stacked .p-inputnumber-button-group {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        inset-block-start: 1px;
+        inset-inline-end: 1px;
+        height: calc(100% - 2px);
+        z-index: 1;
+      }
+
+      .p-inputnumber-stacked .p-inputnumber-increment-button {
+        padding: 0;
+        border-start-end-radius: calc(var(--p-inputnumber-button-border-radius) - 1px);
+      }
+
+      .p-inputnumber-stacked .p-inputnumber-decrement-button {
+        padding: 0;
+        border-end-end-radius: calc(var(--p-inputnumber-button-border-radius) - 1px);
+      }
+
+      .p-inputnumber-stacked .p-inputnumber-input {
+        padding-inline-end: calc(var(--p-inputnumber-button-width) + var(--p-form-field-padding-x));
+      }
+
+      .p-inputnumber-horizontal .p-inputnumber-button {
+        border: 1px solid var(--p-inputnumber-button-border-color);
+      }
+
+      .p-inputnumber-horizontal .p-inputnumber-button:hover {
+        border-color: var(--p-inputnumber-button-hover-border-color);
+      }
+
+      .p-inputnumber-horizontal .p-inputnumber-button:active {
+        border-color: var(--p-inputnumber-button-active-border-color);
+      }
+
+      .p-inputnumber-horizontal .p-inputnumber-increment-button {
+        order: 3;
+        border-start-end-radius: var(--p-inputnumber-button-border-radius);
+        border-end-end-radius: var(--p-inputnumber-button-border-radius);
+        border-inline-start: 0 none;
+      }
+
+      .p-inputnumber-horizontal .p-inputnumber-input {
+        order: 2;
+        border-radius: 0;
+      }
+
+      .p-inputnumber-horizontal .p-inputnumber-decrement-button {
+        order: 1;
+        border-start-start-radius: var(--p-inputnumber-button-border-radius);
+        border-end-start-radius: var(--p-inputnumber-button-border-radius);
+        border-inline-end: 0 none;
+      }
+
+      .p-floatlabel:has(.p-inputnumber-horizontal) label {
+        margin-inline-start: var(--p-inputnumber-button-width);
+      }
+
+      .p-inputnumber-vertical {
+        flex-direction: column;
+      }
+
+      .p-inputnumber-vertical .p-inputnumber-button {
+        border: 1px solid var(--p-inputnumber-button-border-color);
+        padding: var(--p-inputnumber-button-vertical-padding);
+      }
+
+      .p-inputnumber-vertical .p-inputnumber-button:hover {
+        border-color: var(--p-inputnumber-button-hover-border-color);
+      }
+
+      .p-inputnumber-vertical .p-inputnumber-button:active {
+        border-color: var(--p-inputnumber-button-active-border-color);
+      }
+
+      .p-inputnumber-vertical .p-inputnumber-increment-button {
+        order: 1;
+        border-start-start-radius: var(--p-inputnumber-button-border-radius);
+        border-start-end-radius: var(--p-inputnumber-button-border-radius);
+        width: 100%;
+        border-block-end: 0 none;
+      }
+
+      .p-inputnumber-vertical .p-inputnumber-input {
+        order: 2;
+        border-radius: 0;
+        text-align: center;
+      }
+
+      .p-inputnumber-vertical .p-inputnumber-decrement-button {
+        order: 3;
+        border-end-start-radius: var(--p-inputnumber-button-border-radius);
+        border-end-end-radius: var(--p-inputnumber-button-border-radius);
+        width: 100%;
+        border-block-start: 0 none;
+      }
+
+      .p-inputnumber-input {
+        flex: 1 1 auto;
+      }
+
+      .p-inputnumber-fluid {
+        width: 100%;
+      }
+
+      .p-inputnumber-fluid .p-inputnumber-input {
+        width: 1%;
+      }
+
+      .p-inputnumber-fluid.p-inputnumber-vertical .p-inputnumber-input {
+        width: 100%;
+      }
+
+      .p-inputnumber:has(.p-inputtext-sm) .p-inputnumber-button .p-icon {
+        font-size: var(--p-form-field-sm-font-size);
+        width: var(--p-form-field-sm-font-size);
+        height: var(--p-form-field-sm-font-size);
+      }
+
+      .p-inputnumber:has(.p-inputtext-lg) .p-inputnumber-button .p-icon {
+        font-size: var(--p-form-field-lg-font-size);
+        width: var(--p-form-field-lg-font-size);
+        height: var(--p-form-field-lg-font-size);
+      }
+
+      .p-inputnumber-clear-icon {
+        position: absolute;
+        top: 50%;
+        margin-top: -0.5rem;
+        cursor: pointer;
+        inset-inline-end: var(--p-form-field-padding-x);
+        color: var(--p-form-field-icon-color);
+      }
+
+      .p-inputnumber:has(.p-inputnumber-clear-icon) .p-inputnumber-input {
+        padding-inline-end: calc((var(--p-form-field-padding-x) * 2) + var(--p-icon-size));
+      }
+
+      .p-inputnumber-stacked .p-inputnumber-clear-icon {
+        inset-inline-end: calc(var(--p-inputnumber-button-width) + var(--p-form-field-padding-x));
+      }
+
+      .p-inputnumber-stacked:has(.p-inputnumber-clear-icon) .p-inputnumber-input {
+        padding-inline-end: calc(var(--p-inputnumber-button-width) + (var(--p-form-field-padding-x) * 2) + var(--p-icon-size));
+      }
+
+      .p-inputnumber-horizontal .p-inputnumber-clear-icon {
+        inset-inline-end: calc(var(--p-inputnumber-button-width) + var(--p-form-field-padding-x));
+      }
+
+      p-inputNumber.ng-invalid.ng-dirty > .p-inputtext, p-input-number.ng-invalid.ng-dirty > .p-inputtext, p-inputnumber.ng-invalid.ng-dirty > .p-inputtext {
+        border-color: var(--p-inputtext-invalid-border-color);
+      }
+
+      p-inputNumber.ng-invalid.ng-dirty > .p-inputtext:enabled:focus, p-input-number.ng-invalid.ng-dirty > .p-inputtext:enabled:focus, p-inputnumber.ng-invalid.ng-dirty > .p-inputtext:enabled:focus {
+        border-color: var(--p-inputtext-focus-border-color);
+      }
+
+      p-inputNumber.ng-invalid.ng-dirty > .p-inputtext::placeholder, p-input-number.ng-invalid.ng-dirty > .p-inputtext::placeholder, p-inputnumber.ng-invalid.ng-dirty > .p-inputtext::placeholder {
+        color: var(--p-inputtext-invalid-placeholder-color);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="ripple-variables">
+      :root, :host {
+        --p-ripple-background: rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="ripple-style">
+      .p-ink {
+        display: block;
+        position: absolute;
+        background: var(--p-ripple-background);
+        border-radius: 100%;
+        transform: scale(0);
+        pointer-events: none;
+      }
+
+      .p-ink-active {
+        animation: ripple 0.4s linear;
+      }
+
+      @keyframes ripple {
+        100% {
+          opacity: 0;
+          transform: scale(2.5);
+        }
+      }
+
+      .p-ripple {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .p-ripple-disabled .p-ink {
+        display: none !important;
+      }
+
+      @keyframes ripple {
+        100% {
+          opacity: 0;
+          transform: scale(2.5);
+        }
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="inputtext-variables">
+      :root, :host {
+        --p-inputtext-background: var(--p-form-field-background);
+        --p-inputtext-disabled-background: var(--p-form-field-disabled-background);
+        --p-inputtext-filled-background: var(--p-form-field-filled-background);
+        --p-inputtext-filled-hover-background: var(--p-form-field-filled-hover-background);
+        --p-inputtext-filled-focus-background: var(--p-form-field-filled-focus-background);
+        --p-inputtext-border-color: var(--p-form-field-border-color);
+        --p-inputtext-hover-border-color: var(--p-form-field-hover-border-color);
+        --p-inputtext-focus-border-color: var(--p-form-field-focus-border-color);
+        --p-inputtext-invalid-border-color: var(--p-form-field-invalid-border-color);
+        --p-inputtext-color: var(--p-form-field-color);
+        --p-inputtext-disabled-color: var(--p-form-field-disabled-color);
+        --p-inputtext-placeholder-color: var(--p-form-field-placeholder-color);
+        --p-inputtext-invalid-placeholder-color: var(--p-form-field-invalid-placeholder-color);
+        --p-inputtext-shadow: var(--p-form-field-shadow);
+        --p-inputtext-padding-x: var(--p-form-field-padding-x);
+        --p-inputtext-padding-y: var(--p-form-field-padding-y);
+        --p-inputtext-border-radius: var(--p-form-field-border-radius);
+        --p-inputtext-transition-duration: var(--p-form-field-transition-duration);
+        --p-inputtext-lg-font-size: var(--p-form-field-lg-font-size);
+        --p-inputtext-lg-padding-x: var(--p-form-field-lg-padding-x);
+        --p-inputtext-lg-padding-y: var(--p-form-field-lg-padding-y);
+        --p-inputtext-sm-font-size: var(--p-form-field-sm-font-size);
+        --p-inputtext-sm-padding-x: var(--p-form-field-sm-padding-x);
+        --p-inputtext-sm-padding-y: var(--p-form-field-sm-padding-y);
+        --p-inputtext-focus-ring-width: var(--p-form-field-focus-ring-width);
+        --p-inputtext-focus-ring-style: var(--p-form-field-focus-ring-style);
+        --p-inputtext-focus-ring-color: var(--p-form-field-focus-ring-color);
+        --p-inputtext-focus-ring-offset: var(--p-form-field-focus-ring-offset);
+        --p-inputtext-focus-ring-shadow: var(--p-form-field-focus-ring-shadow);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="inputtext-style">
+      .p-inputtext {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-size: 1rem;
+        color: var(--p-inputtext-color);
+        background: var(--p-inputtext-background);
+        padding-block: var(--p-inputtext-padding-y);
+        padding-inline: var(--p-inputtext-padding-x);
+        border: 1px solid var(--p-inputtext-border-color);
+        transition: background var(--p-inputtext-transition-duration), color var(--p-inputtext-transition-duration), border-color var(--p-inputtext-transition-duration), outline-color var(--p-inputtext-transition-duration), box-shadow var(--p-inputtext-transition-duration);
+        appearance: none;
+        border-radius: var(--p-inputtext-border-radius);
+        outline-color: transparent;
+        box-shadow: var(--p-inputtext-shadow);
+      }
+
+      .p-inputtext:enabled:hover {
+        border-color: var(--p-inputtext-hover-border-color);
+      }
+
+      .p-inputtext:enabled:focus {
+        border-color: var(--p-inputtext-focus-border-color);
+        box-shadow: var(--p-inputtext-focus-ring-shadow);
+        outline: var(--p-inputtext-focus-ring-width) var(--p-inputtext-focus-ring-style) var(--p-inputtext-focus-ring-color);
+        outline-offset: var(--p-inputtext-focus-ring-offset);
+      }
+
+      .p-inputtext.p-invalid {
+        border-color: var(--p-inputtext-invalid-border-color);
+      }
+
+      .p-inputtext.p-variant-filled {
+        background: var(--p-inputtext-filled-background);
+      }
+
+      .p-inputtext.p-variant-filled:enabled:hover {
+        background: var(--p-inputtext-filled-hover-background);
+      }
+
+      .p-inputtext.p-variant-filled:enabled:focus {
+        background: var(--p-inputtext-filled-focus-background);
+      }
+
+      .p-inputtext:disabled {
+        opacity: 1;
+        background: var(--p-inputtext-disabled-background);
+        color: var(--p-inputtext-disabled-color);
+      }
+
+      .p-inputtext::placeholder {
+        color: var(--p-inputtext-placeholder-color);
+      }
+
+      .p-inputtext.p-invalid::placeholder {
+        color: var(--p-inputtext-invalid-placeholder-color);
+      }
+
+      .p-inputtext-sm {
+        font-size: var(--p-inputtext-sm-font-size);
+        padding-block: var(--p-inputtext-sm-padding-y);
+        padding-inline: var(--p-inputtext-sm-padding-x);
+      }
+
+      .p-inputtext-lg {
+        font-size: var(--p-inputtext-lg-font-size);
+        padding-block: var(--p-inputtext-lg-padding-y);
+        padding-inline: var(--p-inputtext-lg-padding-x);
+      }
+
+      .p-inputtext-fluid {
+        width: 100%;
+      }
+
+      .p-inputtext.ng-invalid.ng-dirty {
+        border-color: var(--p-inputtext-invalid-border-color);
+      }
+
+      .p-inputtext.ng-invalid.ng-dirty::placeholder {
+        color: var(--p-inputtext-invalid-placeholder-color);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="select-variables">
+      :root, :host {
+        --p-select-empty-message-padding: var(--p-list-option-padding);
+        --p-select-checkmark-color: var(--p-list-option-color);
+        --p-select-checkmark-gutter-start: -0.375rem;
+        --p-select-checkmark-gutter-end: 0.375rem;
+        --p-select-clear-icon-color: var(--p-form-field-icon-color);
+        --p-select-option-group-background: var(--p-list-option-group-background);
+        --p-select-option-group-color: var(--p-list-option-group-color);
+        --p-select-option-group-font-weight: var(--p-list-option-group-font-weight);
+        --p-select-option-group-padding: var(--p-list-option-group-padding);
+        --p-select-option-focus-background: var(--p-list-option-focus-background);
+        --p-select-option-selected-background: var(--p-list-option-selected-background);
+        --p-select-option-selected-focus-background: var(--p-list-option-selected-focus-background);
+        --p-select-option-color: var(--p-list-option-color);
+        --p-select-option-focus-color: var(--p-list-option-focus-color);
+        --p-select-option-selected-color: var(--p-list-option-selected-color);
+        --p-select-option-selected-focus-color: var(--p-list-option-selected-focus-color);
+        --p-select-option-padding: var(--p-list-option-padding);
+        --p-select-option-border-radius: var(--p-list-option-border-radius);
+        --p-select-list-padding: var(--p-list-padding);
+        --p-select-list-gap: var(--p-list-gap);
+        --p-select-list-header-padding: var(--p-list-header-padding);
+        --p-select-overlay-background: var(--p-overlay-select-background);
+        --p-select-overlay-border-color: var(--p-overlay-select-border-color);
+        --p-select-overlay-border-radius: var(--p-overlay-select-border-radius);
+        --p-select-overlay-color: var(--p-overlay-select-color);
+        --p-select-overlay-shadow: var(--p-overlay-select-shadow);
+        --p-select-dropdown-width: 2.5rem;
+        --p-select-dropdown-color: var(--p-form-field-icon-color);
+        --p-select-background: var(--p-form-field-background);
+        --p-select-disabled-background: var(--p-form-field-disabled-background);
+        --p-select-filled-background: var(--p-form-field-filled-background);
+        --p-select-filled-hover-background: var(--p-form-field-filled-hover-background);
+        --p-select-filled-focus-background: var(--p-form-field-filled-focus-background);
+        --p-select-border-color: var(--p-form-field-border-color);
+        --p-select-hover-border-color: var(--p-form-field-hover-border-color);
+        --p-select-focus-border-color: var(--p-form-field-focus-border-color);
+        --p-select-invalid-border-color: var(--p-form-field-invalid-border-color);
+        --p-select-color: var(--p-form-field-color);
+        --p-select-disabled-color: var(--p-form-field-disabled-color);
+        --p-select-placeholder-color: var(--p-form-field-placeholder-color);
+        --p-select-invalid-placeholder-color: var(--p-form-field-invalid-placeholder-color);
+        --p-select-shadow: var(--p-form-field-shadow);
+        --p-select-padding-x: var(--p-form-field-padding-x);
+        --p-select-padding-y: var(--p-form-field-padding-y);
+        --p-select-border-radius: var(--p-form-field-border-radius);
+        --p-select-transition-duration: var(--p-form-field-transition-duration);
+        --p-select-lg-font-size: var(--p-form-field-lg-font-size);
+        --p-select-lg-padding-x: var(--p-form-field-lg-padding-x);
+        --p-select-lg-padding-y: var(--p-form-field-lg-padding-y);
+        --p-select-sm-font-size: var(--p-form-field-sm-font-size);
+        --p-select-sm-padding-x: var(--p-form-field-sm-padding-x);
+        --p-select-sm-padding-y: var(--p-form-field-sm-padding-y);
+        --p-select-focus-ring-width: var(--p-form-field-focus-ring-width);
+        --p-select-focus-ring-style: var(--p-form-field-focus-ring-style);
+        --p-select-focus-ring-color: var(--p-form-field-focus-ring-color);
+        --p-select-focus-ring-offset: var(--p-form-field-focus-ring-offset);
+        --p-select-focus-ring-shadow: var(--p-form-field-focus-ring-shadow);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="select-style">
+      .p-select {
+        display: inline-flex;
+        cursor: pointer;
+        position: relative;
+        user-select: none;
+        background: var(--p-select-background);
+        border: 1px solid var(--p-select-border-color);
+        transition: background var(--p-select-transition-duration), color var(--p-select-transition-duration), border-color var(--p-select-transition-duration), outline-color var(--p-select-transition-duration), box-shadow var(--p-select-transition-duration);
+        border-radius: var(--p-select-border-radius);
+        outline-color: transparent;
+        box-shadow: var(--p-select-shadow);
+      }
+
+      .p-select:not(.p-disabled):hover {
+        border-color: var(--p-select-hover-border-color);
+      }
+
+      .p-select:not(.p-disabled).p-focus {
+        border-color: var(--p-select-focus-border-color);
+        box-shadow: var(--p-select-focus-ring-shadow);
+        outline: var(--p-select-focus-ring-width) var(--p-select-focus-ring-style) var(--p-select-focus-ring-color);
+        outline-offset: var(--p-select-focus-ring-offset);
+      }
+
+      .p-select.p-variant-filled {
+        background: var(--p-select-filled-background);
+      }
+
+      .p-select.p-variant-filled:not(.p-disabled):hover {
+        background: var(--p-select-filled-hover-background);
+      }
+
+      .p-select.p-variant-filled:not(.p-disabled).p-focus {
+        background: var(--p-select-filled-focus-background);
+      }
+
+      .p-select.p-invalid {
+        border-color: var(--p-select-invalid-border-color);
+      }
+
+      .p-select.p-disabled {
+        opacity: 1;
+        background: var(--p-select-disabled-background);
+      }
+
+      .p-select-clear-icon {
+        align-self: center;
+        color: var(--p-select-clear-icon-color);
+        inset-inline-end: var(--p-select-dropdown-width);
+      }
+
+      .p-select-dropdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background: transparent;
+        color: var(--p-select-dropdown-color);
+        width: var(--p-select-dropdown-width);
+        border-start-end-radius: var(--p-select-border-radius);
+        border-end-end-radius: var(--p-select-border-radius);
+      }
+
+      .p-select-label {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        flex: 1 1 auto;
+        width: 1%;
+        padding: var(--p-select-padding-y) var(--p-select-padding-x);
+        text-overflow: ellipsis;
+        cursor: pointer;
+        color: var(--p-select-color);
+        background: transparent;
+        border: 0 none;
+        outline: 0 none;
+        font-size: 1rem;
+      }
+
+      .p-select-label.p-placeholder {
+        color: var(--p-select-placeholder-color);
+      }
+
+      .p-select.p-invalid .p-select-label.p-placeholder {
+        color: var(--p-select-invalid-placeholder-color);
+      }
+
+      .p-select.p-disabled .p-select-label {
+        color: var(--p-select-disabled-color);
+      }
+
+      .p-select-label-empty {
+        overflow: hidden;
+        opacity: 0;
+      }
+
+      input.p-select-label {
+        cursor: default;
+      }
+
+      .p-select-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--p-select-overlay-background);
+        color: var(--p-select-overlay-color);
+        border: 1px solid var(--p-select-overlay-border-color);
+        border-radius: var(--p-select-overlay-border-radius);
+        box-shadow: var(--p-select-overlay-shadow);
+        min-width: 100%;
+        transform-origin: inherit;
+        will-change: transform;
+      }
+
+      .p-select-header {
+        padding: var(--p-select-list-header-padding);
+      }
+
+      .p-select-filter {
+        width: 100%;
+      }
+
+      .p-select-list-container {
+        overflow: auto;
+      }
+
+      .p-select-option-group {
+        cursor: auto;
+        margin: 0;
+        padding: var(--p-select-option-group-padding);
+        background: var(--p-select-option-group-background);
+        color: var(--p-select-option-group-color);
+        font-weight: var(--p-select-option-group-font-weight);
+      }
+
+      .p-select-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        padding: var(--p-select-list-padding);
+        gap: var(--p-select-list-gap);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .p-select-option {
+        cursor: pointer;
+        font-weight: normal;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: var(--p-select-option-padding);
+        border: 0 none;
+        color: var(--p-select-option-color);
+        background: transparent;
+        transition: background var(--p-select-transition-duration), color var(--p-select-transition-duration), border-color var(--p-select-transition-duration), box-shadow var(--p-select-transition-duration), outline-color var(--p-select-transition-duration);
+        border-radius: var(--p-select-option-border-radius);
+      }
+
+      .p-select-option:not(.p-select-option-selected):not(.p-disabled).p-focus {
+        background: var(--p-select-option-focus-background);
+        color: var(--p-select-option-focus-color);
+      }
+
+      .p-select-option:not(.p-select-option-selected):not(.p-disabled):hover {
+        background: var(--p-select-option-focus-background);
+        color: var(--p-select-option-focus-color);
+      }
+
+      .p-select-option.p-select-option-selected {
+        background: var(--p-select-option-selected-background);
+        color: var(--p-select-option-selected-color);
+      }
+
+      .p-select-option.p-select-option-selected.p-focus {
+        background: var(--p-select-option-selected-focus-background);
+        color: var(--p-select-option-selected-focus-color);
+      }
+
+      .p-select-option-blank-icon {
+        flex-shrink: 0;
+      }
+
+      .p-select-option-check-icon {
+        position: relative;
+        flex-shrink: 0;
+        margin-inline-start: var(--p-select-checkmark-gutter-start);
+        margin-inline-end: var(--p-select-checkmark-gutter-end);
+        color: var(--p-select-checkmark-color);
+      }
+
+      .p-select-empty-message {
+        padding: var(--p-select-empty-message-padding);
+      }
+
+      .p-select-fluid {
+        display: flex;
+        width: 100%;
+      }
+
+      .p-select-sm .p-select-label {
+        font-size: var(--p-select-sm-font-size);
+        padding-block: var(--p-select-sm-padding-y);
+        padding-inline: var(--p-select-sm-padding-x);
+      }
+
+      .p-select-sm .p-select-dropdown .p-icon {
+        font-size: var(--p-select-sm-font-size);
+        width: var(--p-select-sm-font-size);
+        height: var(--p-select-sm-font-size);
+      }
+
+      .p-select-lg .p-select-label {
+        font-size: var(--p-select-lg-font-size);
+        padding-block: var(--p-select-lg-padding-y);
+        padding-inline: var(--p-select-lg-padding-x);
+      }
+
+      .p-select-lg .p-select-dropdown .p-icon {
+        font-size: var(--p-select-lg-font-size);
+        width: var(--p-select-lg-font-size);
+        height: var(--p-select-lg-font-size);
+      }
+
+      .p-floatlabel-in .p-select-filter {
+        padding-block-start: var(--p-select-padding-y);
+        padding-block-end: var(--p-select-padding-y);
+      }
+
+      .p-select-label.p-placeholder {
+        color: var(--p-select-placeholder-color);
+      }
+
+      .p-select.ng-invalid.ng-dirty {
+        border-color: var(--p-select-invalid-border-color);
+      }
+
+      .p-dropdown.ng-invalid.ng-dirty .p-dropdown-label.p-placeholder, .p-select.ng-invalid.ng-dirty .p-select-label.p-placeholder {
+        color: var(--p-select-invalid-placeholder-color);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="overlay-style">
+      .p-overlay-modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .p-overlay-content {
+        transform-origin: inherit;
+        will-change: transform;
+      }
+
+      .p-component-overlay.p-component {
+        position: relative;
+      }
+
+      .p-overlay-modal > .p-overlay-content {
+        z-index: 1;
+        width: 90%;
+      }
+
+      .p-overlay-top {
+        align-items: flex-start;
+      }
+
+      .p-overlay-top-start {
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      .p-overlay-top-end {
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+
+      .p-overlay-bottom {
+        align-items: flex-end;
+      }
+
+      .p-overlay-bottom-start {
+        align-items: flex-end;
+        justify-content: flex-start;
+      }
+
+      .p-overlay-bottom-end {
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+
+      .p-overlay-left {
+        justify-content: flex-start;
+      }
+
+      .p-overlay-left-start {
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .p-overlay-left-end {
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+
+      .p-overlay-right {
+        justify-content: flex-end;
+      }
+
+      .p-overlay-right-start {
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+
+      .p-overlay-right-end {
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      .p-overlay-content ~ .p-overlay-content {
+        display: none;
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="tooltip-variables">
+      :root, :host {
+        --p-tooltip-max-width: 12.5rem;
+        --p-tooltip-gutter: 0.25rem;
+        --p-tooltip-shadow: var(--p-overlay-popover-shadow);
+        --p-tooltip-padding: 0.5rem 0.75rem;
+        --p-tooltip-border-radius: var(--p-overlay-popover-border-radius);
+        --p-tooltip-background: var(--p-surface-700);
+        --p-tooltip-color: var(--p-surface-0);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="tooltip-style">
+      .p-tooltip {
+        position: absolute;
+        display: none;
+        max-width: var(--p-tooltip-max-width);
+      }
+
+      .p-tooltip-right, .p-tooltip-left {
+        padding: 0 var(--p-tooltip-gutter);
+      }
+
+      .p-tooltip-top, .p-tooltip-bottom {
+        padding: var(--p-tooltip-gutter) 0;
+      }
+
+      .p-tooltip-text {
+        white-space: pre-line;
+        word-break: break-word;
+        background: var(--p-tooltip-background);
+        color: var(--p-tooltip-color);
+        padding: var(--p-tooltip-padding);
+        box-shadow: var(--p-tooltip-shadow);
+        border-radius: var(--p-tooltip-border-radius);
+      }
+
+      .p-tooltip-arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+      }
+
+      .p-tooltip-right .p-tooltip-arrow {
+        margin-top: calc(-1 * var(--p-tooltip-gutter));
+        border-width: var(--p-tooltip-gutter) var(--p-tooltip-gutter) var(--p-tooltip-gutter) 0;
+        border-right-color: var(--p-tooltip-background);
+      }
+
+      .p-tooltip-left .p-tooltip-arrow {
+        margin-top: calc(-1 * var(--p-tooltip-gutter));
+        border-width: var(--p-tooltip-gutter) 0 var(--p-tooltip-gutter) var(--p-tooltip-gutter);
+        border-left-color: var(--p-tooltip-background);
+      }
+
+      .p-tooltip-top .p-tooltip-arrow {
+        margin-left: calc(-1 * var(--p-tooltip-gutter));
+        border-width: var(--p-tooltip-gutter) var(--p-tooltip-gutter) 0 var(--p-tooltip-gutter);
+        border-top-color: var(--p-tooltip-background);
+        border-bottom-color: var(--p-tooltip-background);
+      }
+
+      .p-tooltip-bottom .p-tooltip-arrow {
+        margin-left: calc(-1 * var(--p-tooltip-gutter));
+        border-width: 0 var(--p-tooltip-gutter) var(--p-tooltip-gutter) var(--p-tooltip-gutter);
+        border-top-color: var(--p-tooltip-background);
+        border-bottom-color: var(--p-tooltip-background);
+      }
+    </style>
+    <style type="text/css" data-primeng-style-id="baseicon">
+      .p-icon {
+        display: inline-block;
+        vertical-align: baseline;
+        flex-shrink: 0;
+      }
+
+      .p-icon-spin {
+        -webkit-animation: p-icon-spin 2s infinite linear;
+        animation: p-icon-spin 2s infinite linear;
+      }
+
+      @-webkit-keyframes p-icon-spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(359deg);
+          transform: rotate(359deg);
+        }
+      }
+
+      @keyframes p-icon-spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(359deg);
+          transform: rotate(359deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--nghm-->
+    <script type="text/javascript" id="ng-event-dispatch-contract">
+      (() => {
+          function p(t, n, r, o, e, i, f, m) {
+            return {
+              eventType: t,
+              event: n,
+              targetElement: r,
+              eic: o,
+              timeStamp: e,
+              eia: i,
+              eirp: f,
+              eiack: m
+            }
+          }
+
+          function u(t) {
+            let n = []
+              , r = e => {
+                n.push(e)
+              }
+            ;
+            return {
+              c: t,
+              q: n,
+              et: [],
+              etc: [],
+              d: r,
+              h: e => {
+                r(p(e.type, e, e.target, t, Date.now()))
+              }
+            }
+          }
+
+          function s(t, n, r) {
+            for (let o = 0; o < n.length; o++) {
+              let e = n[o];
+              (r ? t.etc : t.et).push(e),
+                t.c.addEventListener(e, t.h, r)
+            }
+          }
+
+          function c(t, n, r, o, e = window) {
+            let i = u(t);
+            e._ejsas || (e._ejsas = {}),
+              e._ejsas[n] = i,
+              s(i, r),
+              s(i, o, !0)
+          }
+
+          window.__jsaction_bootstrap = c;
+        }
+      )();
+    </script>
+    <script>
+      window.__jsaction_bootstrap(document.body, "ng", ["click", "keydown"], ["focus", "blur"]);
+    </script>
+    <app-root ng-version="21.2.13" ngh="11" ng-server-context="ssr">
+      <router-outlet></router-outlet>
+      <ng-component ngh="10">
+        <app-header ngh="2">
+          <header class="pos:fix t:0 z:3 w:f bw:0 ts:300 text:light bg:dark backdrop:blur:50 bg:op:70 br:be:10 br:bs:10">
+            <div class="container">
+              <div class="row:a ts:200 py:20">
+                <div class="col:5 md:col:3">
+                  <app-logo ngh="1">
+                    <a class="d:flex align:center gap:5 td:none" title="Istanbul Apartments" href="" jsaction="click:;">
+                      <app-image classes="w:40 ar:1:1" class="shrink:0" ngh="0">
+                        <img class="ar:1:1 d:block w:40 w:max:f" alt="Istanbul Apartments" title="Istanbul Apartments" src="https://fs.alltheworld-apartments.com/storage/istanbul/general/878fe1e9c204e382723d67347906fa26.svg">
+                        <!--container-->
+                      </app-image>
+                      <div class="fw:bold fs:40">IST</div>
+                    </a>
+                    <!--container-->
+                  </app-logo>
+                </div>
+                <div class="col:6 center d:none xl:d:flex">
+                  <app-menu ngh="2">
+                    <div class="d:flex flex:col xl:flex:row gap:20">
+                      <a class="fw:bold" href="" jsaction="click:;">Главная</a>
+                      <a class="fw:bold" href="" jsaction="click:;">Недвижимость</a>
+                      <a class="fw:bold" href="about" jsaction="click:;">Блог</a>
+                      <a class="fw-bold" href="about" jsaction="click:;">О нас</a>
+                    </div>
+                  </app-menu>
+                </div>
+                <div class="col:7 md:col:3 d:flex justify:end align:center gap:10">
+                  <app-socials class="d:none xl:d:block" ngh="3">
+                    <div class="d:flex gap:4 center">
+                      <a target="_blank" class="w:25 ar:1:1 br:circle center td:none fs:14 bg:blue text:white" href="https://facebook.com">
+                        <app-icon icon="facebook-f" ngh="2">
+                          <i class="fa fa- fa-facebook-f fa-light fa-brands"></i>
+                        </app-icon>
+                      </a>
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <a target="_blank" class="w:25 ar:1:1 br:circle center td:none fs:14 bg:purple text:white" href="https://instagram.com">
+                        <app-icon icon="instagram" ngh="2">
+                          <i class="fa fa- fa-instagram fa-light fa-brands"></i>
+                        </app-icon>
+                      </a>
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <a target="_blank" class="w:25 ar:1:1 br:circle center td:none fs:14 bg:gray:900 text:white" href="https://tiktok.com">
+                        <app-icon icon="tiktok" ngh="2">
+                          <i class="fa fa- fa-light fa-tiktok fa-brands"></i>
+                        </app-icon>
+                      </a>
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <a target="_blank" class="w:25 ar:1:1 br:circle center td:none fs:14 bg:red text:white" href="https://youtube.com">
+                        <app-icon icon="youtube" ngh="2">
+                          <i class="fa fa- fa-light fa-youtube fa-brands"></i>
+                        </app-icon>
+                      </a>
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <a target="_blank" class="w:25 ar:1:1 br:circle center td:none fs:14 bg:blue text:white" href="https://telegram.com">
+                        <app-icon icon="telegram" ngh="2">
+                          <i class="fa fa- fa-light fa-telegram fa-brands"></i>
+                        </app-icon>
+                      </a>
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <a target="_blank" class="w:25 ar:1:1 br:circle center td:none fs:14 bg:green:400 text:white" href="https://whatsapp.com">
+                        <app-icon icon="whatsapp" ngh="2">
+                          <i class="fa fa- fa-light fa-whatsapp fa-brands"></i>
+                        </app-icon>
+                      </a>
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                    </div>
+                  </app-socials>
+                  <app-languages ngh="6">
+                    <p-select size="small" optionlabel="title" id="pn_id_5" data-p="fluid small" class="p-component p-inputfield-sm p-inputwrapper p-select p-select-fluid p-select-sm ng-untouched ng-pristine ng-valid p-inputwrapper-filled" pc83="" data-pc-section="root" data-pc-name="select" ngh="5" jsaction="click:;">
+                                            <span role="combobox" class="p-select-label" aria-disabled="false" aria-haspopup="listbox" aria-expanded="false" tabindex="0" data-p="small" data-pc-section="label" autofocus="true" pc85="" pc86="" aria-label="English" jsaction="focus:;blur:;keydown:;">
+                                                <!--container-->
+                                              <!--container-->
+                                                <div class="d:flex center gap:5">
+                                                    <app-image class="d:block w:30 h:20 of:cover ov:hid br:4" ngh="0">
+                                                        <img class="d:block w:max:f" alt="English" title="" src="https://fs.alltheworld-apartments.com/storage/langs/9b7660dff1d909d79fd58961b0e09d49.png">
+                                                      <!--container-->
+                                                    </app-image>
+                                                    <div class="fs:13 fw:bold">English</div>
+                                                </div>
+                                              <!--ng-container-->
+                                              <!--container-->
+                                              <!--container-->
+                                            </span>
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <!--container-->
+                      <div role="button" aria-label="dropdown trigger" aria-haspopup="listbox" class="p-select-dropdown" aria-expanded="false" data-pc-section="dropdown">
+                        <!--container-->
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" data-p-icon="chevron-down" class="p-select-dropdown-icon p-icon" data-pc-section="dropdownicon" pc87="" ngh="2">
+                          <path d="M7.01744 10.398C6.91269 10.3985 6.8089 10.378 6.71215 10.3379C6.61541 10.2977 6.52766 10.2386 6.45405 10.1641L1.13907 4.84913C1.03306 4.69404 0.985221 4.5065 1.00399 4.31958C1.02276 4.13266 1.10693 3.95838 1.24166 3.82747C1.37639 3.69655 1.55301 3.61742 1.74039 3.60402C1.92777 3.59062 2.11386 3.64382 2.26584 3.75424L7.01744 8.47394L11.769 3.75424C11.9189 3.65709 12.097 3.61306 12.2748 3.62921C12.4527 3.64535 12.6199 3.72073 12.7498 3.84328C12.8797 3.96582 12.9647 4.12842 12.9912 4.30502C13.0177 4.48162 12.9841 4.662 12.8958 4.81724L7.58083 10.1322C7.50996 10.2125 7.42344 10.2775 7.32656 10.3232C7.22968 10.3689 7.12449 10.3944 7.01744 10.398Z" fill="currentColor"></path>
+                        </svg>
+                        <!--container-->
+                        <!--ng-container-->
+                        <!--container-->
+                        <!--container-->
+                        <!--container-->
+                        <!--container-->
+                      </div>
+                      <p-overlay pc84="" data-pc-section="host" ngh="4">
+                        <!--container-->
+                        <!--container-->
+                        <!--container-->
+                      </p-overlay>
+                    </p-select>
+                    <!--container-->
+                  </app-languages>
+                  <div class="d:flex flex:col justify:between gap:10 xl:d:none p:4 w:40 h:30" jsaction="click:;">
+                    <div class="h:2 w:f bg:light"></div>
+                    <div class="h:2 w:f bg:light"></div>
+                    <div class="h:2 w:f bg:light"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </app-header>
+        <router-outlet></router-outlet>
+        <ng-component ngh="2">
+          <app-breadcrumbs ngh="2">
+            <div class="pos:rel ov:hid br:be:20 br:bs:20">
+              <div class="an:18000:breadcrumbsImageZoom an:count:inf bg:img:[https://fs.alltheworld-apartments.com/storage/istanbul/welcome/2b710d8e280482b45074786f46d3b0cb.jpeg] bg:pos:center bg:size:cover h:f pos:abs s:0 t:0 w:f z:1"></div>
+              <div class="pos:rel z:2 d:flex center text:light bg:dark bg:op:50 pt:100">
+                <div class="ta:center w:1200 br:30 p:50 backdrop:blur:50 bg:dark bg:op:50 d:flex flex:col gap:20 container my:120">
+                  <h1 class="ff:title fs:30 md:fs:50">Find Your Perfect Property in Istanbul</h1>
+                  <div class="text:zinc:300">Discover apartments, villas, and investment opportunities in the best districts of Istanbul with guidance from local real estate experts.</div>
+                  <app-search-form ngh="9">
+                    <div class="row gap:10">
+                      <div class="col:3 p:20 bg:light text:dark br:6 cursor:pointer" jsaction="click:;">
+                        <div class="d:flex justify:between align:center">
+                          <div class="d:flex gap:10">
+                            <div class="fs-18">Цена</div>
+                            <!--container-->
+                            <!--container-->
+                            <!--container-->
+                          </div>
+                          <app-icon icon="chevron-down" class="text:primary" ngh="2">
+                            <i class="fa fa- fa-chevron-down fa-light"></i>
+                          </app-icon>
+                        </div>
+                      </div>
+                      <div class="col:3 p:20 bg:light text:dark br:6 cursor:pointer" jsaction="click:;">
+                        <div class="d:flex justify:between align:center">
+                          <div class="d:flex gap:10">
+                            <div class="fs-18">Площадь</div>
+                            <!--container-->
+                            <!--container-->
+                            <!--container-->
+                          </div>
+                          <app-icon icon="chevron-down" class="text:primary" ngh="2">
+                            <i class="fa fa- fa-chevron-down fa-light"></i>
+                          </app-icon>
+                        </div>
+                      </div>
+                      <div class="col:3 p:20 bg:light text:dark br:6 cursor:pointer" jsaction="click:;">
+                        <div class="d:flex justify:between align:center">
+                          <div class="d:flex gap:10">
+                            <div class="fs-18">Спальни</div>
+                            <!--container-->
+                            <!--container-->
+                            <!--container-->
+                          </div>
+                          <app-icon icon="chevron-down" class="text:primary" ngh="2">
+                            <i class="fa fa- fa-chevron-down fa-light"></i>
+                          </app-icon>
+                        </div>
+                      </div>
+                      <p-button styleclass="h:f" fluid="true" size="large" severity="primary" class="col:3" pc59="" data-pc-section="host" ngh="7">
+                        <button pripple="" class="p-ripple h:f p-button p-button-fluid p-button-lg p-button-primary p-component" type="button" data-p="large fluid" data-p-severity="primary" data-pc-name="button" pc59="" data-pc-section="root" autofocus="true" pc69="" pc70="" jsaction="click:;focus:;blur:;">Поиск
+                          <!--container-->
+                          <!--container-->
+                          <!--container-->
+                          <!--container-->
+                          <!--ng-container-->
+                          <!--container-->
+                          <!--container-->
+                          <!--container-->
+                        </button>
+                      </p-button>
+                    </div>
+                    <p-popover pc60="" data-pc-section="host" ngh="8">
+                      <!--container-->
+                    </p-popover>
+                    <p-popover pc63="" data-pc-section="host" ngh="8">
+                      <!--container-->
+                    </p-popover>
+                    <p-popover pc66="" data-pc-section="host" ngh="8">
+                      <!--container-->
+                    </p-popover>
+                  </app-search-form>
+                </div>
+              </div>
+            </div>
+          </app-breadcrumbs>
+          <div class="bg:light h:4000"></div>
+        </ng-component>
+        <!--container-->
+        <app-footer ngh="2">
+          <p>footer works!</p>
+        </app-footer>
+      </ng-component>
+      <!--container-->
+    </app-root>
+    <script src="main.js" type="module"></script>
+    <script id="ng-state" type="application/json">
+      {
+        "1769778592": {
+          "b": {
+            "updatedAt": 1779173683,
+            "meta": {
+              "title": "Find Your Perfect Property in Istanbul",
+              "description": "Discover apartments, villas, and investment opportunities in the best districts of Istanbul with guidance from local real estate experts.",
+              "ogTitle": "Find Your Perfect Property in Istanbul",
+              "ogDescription": "Discover apartments, villas, and investment opportunities in the best districts of Istanbul with guidance from local real estate experts.",
+              "ogImage": null
+            },
+            "breadcrumbs": {
+              "title": "Find Your Perfect Property in Istanbul",
+              "subTitle": "Discover apartments, villas, and investment opportunities in the best districts of Istanbul with guidance from local real estate experts.",
+              "image": {
+                "alt": "Untitled",
+                "title": null,
+                "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fwelcome\u002F2b710d8e280482b45074786f46d3b0cb.jpeg"
+              }
+            },
+            "district": {
+              "title": "Explore Istanbul Neighborhoods",
+              "subtitle": "Discover the best areas to live, invest, and enjoy life in Istanbul",
+              "districts": [
+                {
+                  "url": "bak-rkoy",
+                  "isOther": false,
+                  "title": "Bakırköy",
+                  "image": {
+                    "alt": "Bakırköy",
+                    "title": "Bakırköy is a municipality and district in the European part of Istanbul Province",
+                    "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fdistrict\u002F73d4f778aa56d4e4fa8ba1041610b252.webp"
+                  }
+                },
+                {
+                  "url": "besiktas",
+                  "isOther": false,
+                  "title": "Beşiktaş",
+                  "image": {
+                    "alt": "Untitled",
+                    "title": null,
+                    "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fdistrict\u002F9e6b1156dc5bbc8d002d206cf8ec0947.webp"
+                  }
+                }
+              ]
+            },
+            "property": {
+              "title": "Featured Properties in Istanbul",
+              "subtitle": "Handpicked apartments, villas, and investment opportunities in the city’s most desirable locations",
+              "properties": [
+                {
+                  "url": "69ffe2ac48cc8",
+                  "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                  "description": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                  "price": 52947,
+                  "sqrt": 45,
+                  "endConstruction": 2024,
+                  "bathrooms": 1,
+                  "bedrooms": 1,
+                  "type": "apartment",
+                  "floor": null,
+                  "swimmingPool": true,
+                  "newDevelopment": true,
+                  "code": "69ffe2ac48cc8",
+                  "images": [
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F33\u002F9c\u002F764a3a77b8c7cdeb266ddc97a79463f7.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F5e\u002Fa2\u002F801ff191be99140cadc5e34403823fc2.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F8e\u002Feb\u002Fa5fb381da8b5db5bf0c7bb8555f8b9c1.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F16\u002F72\u002F55388cd7bd52bca5ad49c3488d9b149a.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F2b\u002Fd6\u002Fe4414dbc61f7231453c577a493403bf3.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F44\u002F60\u002F35c287325476ca29b76ab4e077eef980.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fbb\u002F4f\u002F91c6cca95db5144603a89749a104a169.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F3d\u002F1f\u002F98352fa9360bae5e4bf6c11f545da012.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F02\u002F18\u002F06c1909c11aeaab815de0094a39b5447.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F96\u002F36\u002Fc82ba9edc367db66acf4939fbdbe3d02.jpeg"
+                    },
+                    {
+                      "alt": "Discover a modern 1+1 apartment in a new development in Esenyurt, Istanbul. With an area from 45 m², it features a fitted kitchen, bathroom, and quality finishes. The complex offers a gym, indoor pool, Turkish bath, and more. Located near Metrobus, hospitals, and shopping centers. Price from €52,947.",
+                      "title": "Charming 1+1 Apartment from Developer, Esenyurt, Istanbul",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fd0\u002Fb7\u002Fbd0fea8ad1700f7066fe479e1f6294fa.png"
+                    }
+                  ],
+                  "district": {
+                    "url": "other",
+                    "isOther": true,
+                    "title": "All Other Districts of Istanbul",
+                    "image": {
+                      "alt": "Untitled",
+                      "title": null,
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fdistrict\u002Ff5132156dd4319d4693fabc40f9cd603.jpeg"
+                    }
+                  }
+                },
+                {
+                  "url": "69ffe2da8358e",
+                  "title": "Nice apartment from the developer in Esenyurt",
+                  "description": "A ready-to-move-in 1+1 apartment from the developer in the Esenyurt district of Istanbul. The complex features open and closed pools, spa, fitness, cinema, and more. Great transport links with planned metro nearby.",
+                  "price": 75000,
+                  "sqrt": 68,
+                  "endConstruction": 2023,
+                  "bathrooms": 1,
+                  "bedrooms": 1,
+                  "type": "apartment",
+                  "floor": null,
+                  "swimmingPool": true,
+                  "newDevelopment": true,
+                  "code": "69ffe2da8358e",
+                  "images": [
+                    {
+                      "alt": "A ready-to-move-in 1+1 apartment from the developer in the Esenyurt district of Istanbul. The complex features open and closed pools, spa, fitness, cinema, and more. Great transport links with planned metro nearby.",
+                      "title": "Nice apartment from the developer in Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F16\u002Fb0\u002Fc452dd6e1cec5d3858e90da0431532cb.png"
+                    },
+                    {
+                      "alt": "A ready-to-move-in 1+1 apartment from the developer in the Esenyurt district of Istanbul. The complex features open and closed pools, spa, fitness, cinema, and more. Great transport links with planned metro nearby.",
+                      "title": "Nice apartment from the developer in Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Ff0\u002Fc2\u002F95def8da5e50d0fc5be293eff373ae7b.png"
+                    },
+                    {
+                      "alt": "A ready-to-move-in 1+1 apartment from the developer in the Esenyurt district of Istanbul. The complex features open and closed pools, spa, fitness, cinema, and more. Great transport links with planned metro nearby.",
+                      "title": "Nice apartment from the developer in Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F2b\u002Fa9\u002Fe425bdb7c8e853e7b83f54ae21941334.png"
+                    },
+                    {
+                      "alt": "A ready-to-move-in 1+1 apartment from the developer in the Esenyurt district of Istanbul. The complex features open and closed pools, spa, fitness, cinema, and more. Great transport links with planned metro nearby.",
+                      "title": "Nice apartment from the developer in Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F2e\u002F3e\u002F53cad81115595f7e1b4b0c72bee285da.png"
+                    },
+                    {
+                      "alt": "A ready-to-move-in 1+1 apartment from the developer in the Esenyurt district of Istanbul. The complex features open and closed pools, spa, fitness, cinema, and more. Great transport links with planned metro nearby.",
+                      "title": "Nice apartment from the developer in Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F61\u002Fac\u002Fa37a5864384db0d7e8b6eb2831739379.png"
+                    },
+                    {
+                      "alt": "A ready-to-move-in 1+1 apartment from the developer in the Esenyurt district of Istanbul. The complex features open and closed pools, spa, fitness, cinema, and more. Great transport links with planned metro nearby.",
+                      "title": "Nice apartment from the developer in Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fb5\u002F48\u002F95a470f1a30b1470b67b3b7ac2cbaf9c.png"
+                    },
+                    {
+                      "alt": "A ready-to-move-in 1+1 apartment from the developer in the Esenyurt district of Istanbul. The complex features open and closed pools, spa, fitness, cinema, and more. Great transport links with planned metro nearby.",
+                      "title": "Nice apartment from the developer in Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F2c\u002F65\u002F34c2479eb96cfcb98a0728d84a3267f5.png"
+                    }
+                  ],
+                  "district": {
+                    "url": "other",
+                    "isOther": true,
+                    "title": "All Other Districts of Istanbul",
+                    "image": {
+                      "alt": "Untitled",
+                      "title": null,
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fdistrict\u002Ff5132156dd4319d4693fabc40f9cd603.jpeg"
+                    }
+                  }
+                },
+                {
+                  "url": "69ffe2fff1802",
+                  "title": "Lovely 1+1 Apartment near Metro, Esenyurt",
+                  "description": "A delightful 1+1 apartment for sale in a completed complex in Esenyurt, Istanbul. The property features an open-plan kitchen and living room, one bedroom, and modern finishes. Located near metro and amenities, this is a great investment opportunity.",
+                  "price": 70000,
+                  "sqrt": 41,
+                  "endConstruction": 2020,
+                  "bathrooms": 1,
+                  "bedrooms": 1,
+                  "type": "apartment",
+                  "floor": null,
+                  "swimmingPool": true,
+                  "newDevelopment": true,
+                  "code": "69ffe2fff1802",
+                  "images": [
+                    {
+                      "alt": "A delightful 1+1 apartment for sale in a completed complex in Esenyurt, Istanbul. The property features an open-plan kitchen and living room, one bedroom, and modern finishes. Located near metro and amenities, this is a great investment opportunity.",
+                      "title": "Lovely 1+1 Apartment near Metro, Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F16\u002Fdb\u002F91981c35d9fc65d0229b59a943fcadad.png"
+                    },
+                    {
+                      "alt": "A delightful 1+1 apartment for sale in a completed complex in Esenyurt, Istanbul. The property features an open-plan kitchen and living room, one bedroom, and modern finishes. Located near metro and amenities, this is a great investment opportunity.",
+                      "title": "Lovely 1+1 Apartment near Metro, Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F25\u002F33\u002F1de119a12db5b6ff688506d413c4ad2e.png"
+                    },
+                    {
+                      "alt": "A delightful 1+1 apartment for sale in a completed complex in Esenyurt, Istanbul. The property features an open-plan kitchen and living room, one bedroom, and modern finishes. Located near metro and amenities, this is a great investment opportunity.",
+                      "title": "Lovely 1+1 Apartment near Metro, Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F00\u002F0b\u002F5d43f062d87428a82ca37c86fbeca91d.png"
+                    },
+                    {
+                      "alt": "A delightful 1+1 apartment for sale in a completed complex in Esenyurt, Istanbul. The property features an open-plan kitchen and living room, one bedroom, and modern finishes. Located near metro and amenities, this is a great investment opportunity.",
+                      "title": "Lovely 1+1 Apartment near Metro, Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fbc\u002F83\u002Fcc287ec18baa70db7c773626e41466ff.png"
+                    },
+                    {
+                      "alt": "A delightful 1+1 apartment for sale in a completed complex in Esenyurt, Istanbul. The property features an open-plan kitchen and living room, one bedroom, and modern finishes. Located near metro and amenities, this is a great investment opportunity.",
+                      "title": "Lovely 1+1 Apartment near Metro, Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F75\u002F7c\u002Fb015b8c2552234a46bcb3d5ca8ddeaa2.png"
+                    },
+                    {
+                      "alt": "A delightful 1+1 apartment for sale in a completed complex in Esenyurt, Istanbul. The property features an open-plan kitchen and living room, one bedroom, and modern finishes. Located near metro and amenities, this is a great investment opportunity.",
+                      "title": "Lovely 1+1 Apartment near Metro, Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F3e\u002Fdd\u002Fe62329554d1f3cc5bca9c23b0b623b57.png"
+                    },
+                    {
+                      "alt": "A delightful 1+1 apartment for sale in a completed complex in Esenyurt, Istanbul. The property features an open-plan kitchen and living room, one bedroom, and modern finishes. Located near metro and amenities, this is a great investment opportunity.",
+                      "title": "Lovely 1+1 Apartment near Metro, Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F20\u002F61\u002F78e2c91f7007f686d60c2c33511064cb.png"
+                    },
+                    {
+                      "alt": "A delightful 1+1 apartment for sale in a completed complex in Esenyurt, Istanbul. The property features an open-plan kitchen and living room, one bedroom, and modern finishes. Located near metro and amenities, this is a great investment opportunity.",
+                      "title": "Lovely 1+1 Apartment near Metro, Esenyurt",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fdb\u002F86\u002F4e3f69c157bd1321ac61c085910f9e24.png"
+                    }
+                  ],
+                  "district": {
+                    "url": "other",
+                    "isOther": true,
+                    "title": "All Other Districts of Istanbul",
+                    "image": {
+                      "alt": "Untitled",
+                      "title": null,
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fdistrict\u002Ff5132156dd4319d4693fabc40f9cd603.jpeg"
+                    }
+                  }
+                },
+                {
+                  "url": "69ffe32fec787",
+                  "title": "Lovely 1+1 apartment near metro, Fatih",
+                  "description": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                  "price": 71111,
+                  "sqrt": 70,
+                  "endConstruction": 2023,
+                  "bathrooms": 1,
+                  "bedrooms": 1,
+                  "type": "apartment",
+                  "floor": 0,
+                  "swimmingPool": false,
+                  "newDevelopment": true,
+                  "code": "69ffe32fec787",
+                  "images": [
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F44\u002Fd7\u002Fa85843aa512e65bdcdaa7de51ccad7e5.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F2c\u002F5f\u002Fa62f39164fc4d17d4d1562b0d50037a5.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fb5\u002Ffc\u002Fb8fce773e8990c2d3e345c433e30f96e.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fff\u002F7e\u002Fa38f051574c2611335104be068a6bc2d.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F02\u002F61\u002F18f40dc5689d646a26bba74dbbbd2fee.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F28\u002Fc1\u002F8fae122990dec8c5dc7b6f084f28ba59.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F44\u002F99\u002Fc602204763a19e6f1db4bbfe810b28d7.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fc1\u002Fea\u002F6365dd100b87ca57e03828efa73f827f.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fab\u002Ff0\u002Fdecd511a9499df209aa591ce28e658d6.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F04\u002F7c\u002Fbbd0e14f159d4ee3fb15310b48359176.jpeg"
+                    },
+                    {
+                      "alt": "A cozy 1+1 apartment in a completed building in Fatih, Istanbul. The apartment features a living room with kitchenette, a separate bedroom, and a total area of 70 m². The building offers amenities like a cafe, shop, garden, and parking.",
+                      "title": "Lovely 1+1 apartment near metro, Fatih",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F44\u002F25\u002F682cf9af0d511d0d29a1c1b3e0c4f193.jpeg"
+                    }
+                  ],
+                  "district": {
+                    "url": "other",
+                    "isOther": true,
+                    "title": "All Other Districts of Istanbul",
+                    "image": {
+                      "alt": "Untitled",
+                      "title": null,
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fdistrict\u002Ff5132156dd4319d4693fabc40f9cd603.jpeg"
+                    }
+                  }
+                },
+                {
+                  "url": "69ffe36064daf",
+                  "title": "Lovely apartment near the sea, Beylikdüzü",
+                  "description": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                  "price": 71651,
+                  "sqrt": 90,
+                  "endConstruction": 2015,
+                  "bathrooms": 2,
+                  "bedrooms": 2,
+                  "type": "apartment",
+                  "floor": 1,
+                  "swimmingPool": false,
+                  "newDevelopment": false,
+                  "code": "69ffe36064daf",
+                  "images": [
+                    {
+                      "alt": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                      "title": "Lovely apartment near the sea, Beylikdüzü",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F01\u002F67\u002F8fedb071c10a6eed95a599a4c9f16502.png"
+                    },
+                    {
+                      "alt": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                      "title": "Lovely apartment near the sea, Beylikdüzü",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F16\u002F38\u002Fcd81077704f7abeaf88c953c1c1b4163.png"
+                    },
+                    {
+                      "alt": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                      "title": "Lovely apartment near the sea, Beylikdüzü",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F49\u002Ff7\u002F2cbb224278a5e9d69b219223423f0aa4.png"
+                    },
+                    {
+                      "alt": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                      "title": "Lovely apartment near the sea, Beylikdüzü",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fb6\u002F19\u002Fbd98e7c75e0f5e3488c3b2624bb43536.png"
+                    },
+                    {
+                      "alt": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                      "title": "Lovely apartment near the sea, Beylikdüzü",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F73\u002F18\u002F3af1b21972292ad3e4eebd8470f1e239.png"
+                    },
+                    {
+                      "alt": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                      "title": "Lovely apartment near the sea, Beylikdüzü",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fde\u002Fdd\u002F290d5e4c382b1eddebf776962b1ec6bf.png"
+                    },
+                    {
+                      "alt": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                      "title": "Lovely apartment near the sea, Beylikdüzü",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F57\u002F16\u002F5ba4a99b355629217b935ca9d8e7eec8.png"
+                    },
+                    {
+                      "alt": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                      "title": "Lovely apartment near the sea, Beylikdüzü",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002Fbe\u002Fdc\u002F3d88c6f6c4debbe532a74af3c4b7c6b7.png"
+                    },
+                    {
+                      "alt": "A lovely 2+1 apartment in Beylikdüzü, Istanbul, with an area of 90 sqm. The apartment is located on the 1st floor and features a kitchen, living room, and 2 bedrooms. It comes with finishing, built-in kitchen furniture, and a complete bathroom. Suitable for residence permit. The complex offers parking, 24\u002F7 security, and a children's playground. Don't miss this opportunity!",
+                      "title": "Lovely apartment near the sea, Beylikdüzü",
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fproperties\u002F2d\u002F08\u002F8d525a2e815a22ddc0879152ac328609.png"
+                    }
+                  ],
+                  "district": {
+                    "url": "other",
+                    "isOther": true,
+                    "title": "All Other Districts of Istanbul",
+                    "image": {
+                      "alt": "Untitled",
+                      "title": null,
+                      "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fdistrict\u002Ff5132156dd4319d4693fabc40f9cd603.jpeg"
+                    }
+                  }
+                }
+              ]
+            },
+            "team": {
+              "title": "Meet Our Local Real Estate Experts",
+              "subtitle": "Our experienced agents help you find the right property, negotiate the best deal, and guide you through every step",
+              "teams": [
+                {
+                  "title": "Burak Acar",
+                  "description": "Leading Real Estate Sales Specialist",
+                  "image": {
+                    "alt": "Burak Acar",
+                    "title": "Leading Real Estate Sales Specialist",
+                    "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fteam\u002F32e636fbc22b144dd55dd539c03013f7.jpeg"
+                  }
+                }
+              ]
+            },
+            "article": {
+              "title": "Insights & Real Estate News",
+              "subtitle": "Stay informed with the latest market trends, investment insights, and expert advice from Istanbul’s real estate industry",
+              "articles": [
+                {
+                  "url": "how-to-buy-property-in-istanbul-in-2026",
+                  "title": "How to buy property in Istanbul in 2026?",
+                  "description": "Discover how to buy property in Istanbul in 2026: legal steps, taxes, best districts, residency options, hidden costs, and expert tips for foreign buyers investing in Turkey’s dynamic real estate market",
+                  "publishedAt": null,
+                  "image": {
+                    "alt": "How to buy property in Istanbul in 2026?",
+                    "title": "Discover how to buy property in Istanbul in 2026: legal steps, taxes, best districts, residency options, hidden costs, and expert tips for foreign buyers investing in Turkey’s dynamic real estate market",
+                    "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fblog\u002Fcb2804e5ca3c398a844320d4b5600822.jpeg"
+                  }
+                }
+              ]
+            }
+          },
+          "h": {
+          },
+          "s": 200,
+          "st": "OK",
+          "u": "https:\u002F\u002Fapi.alltheworld-apartments.com\u002Fpage\u002Fhome",
+          "rt": "json"
+        },
+        "2110532810": {
+          "b": {
+            "phrases": {
+              "en": {
+                "Footer": "Footer",
+                "Связаться с нами": "Связаться с нами",
+                "От": "От",
+                "До": "До",
+                "Цена": "Цена",
+                "от": "от",
+                "до": "до",
+                "Площадь": "Площадь",
+                "Спальни": "Спальни"
+              },
+              "tr": {
+                "Footer": "Footer",
+                "Связаться с нами": "Связаться с нами",
+                "От": "От",
+                "До": "До",
+                "Цена": "Цена",
+                "от": "от",
+                "до": "до",
+                "Площадь": "Площадь",
+                "Спальни": "Спальни"
+              },
+              "ru": {
+                "Footer": "Footer",
+                "Связаться с нами": "Связаться с нами",
+                "От": "От",
+                "До": "До",
+                "Цена": "Цена",
+                "от": "от",
+                "до": "до",
+                "Площадь": "Площадь",
+                "Спальни": "Спальни"
+              },
+              "ar": {
+                "Footer": "Footer",
+                "Связаться с нами": "Связаться с нами",
+                "От": "От",
+                "До": "До",
+                "Цена": "Цена",
+                "от": "от",
+                "до": "до",
+                "Площадь": "Площадь",
+                "Спальни": "Спальни"
+              }
+            },
+            "languages": [
+              {
+                "key": "en",
+                "title": "English",
+                "isDefault": true,
+                "image": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Flangs\u002F9b7660dff1d909d79fd58961b0e09d49.png"
+                }
+              },
+              {
+                "key": "tr",
+                "title": "Türkçe",
+                "isDefault": false,
+                "image": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Flangs\u002Fa4cc08610d0d0ad7a5a98c0ce8e4526c.png"
+                }
+              },
+              {
+                "key": "ru",
+                "title": "Русский",
+                "isDefault": false,
+                "image": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Flangs\u002Ffdfbc0eede75bcdf1e1d07838027e248.png"
+                }
+              },
+              {
+                "key": "ar",
+                "title": "العربية",
+                "isDefault": false,
+                "image": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Flangs\u002Fc1c8388f00e080b0fb6bbda0083d8bed.png"
+                }
+              }
+            ],
+            "codes": [
+            ],
+            "prime": {
+              "primary": {
+                "50": "#eef3ff",
+                "100": "#d9e4ff",
+                "150": "#c8d8ff",
+                "200": "#b7ccff",
+                "250": "#a2bdff",
+                "300": "#8caeff",
+                "350": "#769eff",
+                "400": "#5f88ff",
+                "450": "#456fe3",
+                "500": "#2755b6",
+                "550": "#244faa",
+                "600": "#2149a0",
+                "650": "#1e4391",
+                "700": "#1b3c82",
+                "750": "#183674",
+                "800": "#152f66",
+                "850": "#132959",
+                "900": "#10244d",
+                "950": "#09152e"
+              }
+            },
+            "settings": {
+              "en": {
+                "title": "Istanbul Apartments",
+                "footer": "@ 2026. Istanbul Apartments. All Rights Reserved",
+                "phone": "+77056375859",
+                "email": "istanbul.apartments@gmail.com",
+                "socials": [
+                  {
+                    "key": "facebook",
+                    "value": "https:\u002F\u002Ffacebook.com"
+                  },
+                  {
+                    "key": "instagram",
+                    "value": "https:\u002F\u002Finstagram.com"
+                  },
+                  {
+                    "key": "tiktok",
+                    "value": "https:\u002F\u002Ftiktok.com"
+                  },
+                  {
+                    "key": "youtube",
+                    "value": "https:\u002F\u002Fyoutube.com"
+                  },
+                  {
+                    "key": "telegram",
+                    "value": "https:\u002F\u002Ftelegram.com"
+                  },
+                  {
+                    "key": "whatsapp",
+                    "value": "https:\u002F\u002Fwhatsapp.com"
+                  }
+                ],
+                "favicon": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F878fe1e9c204e382723d67347906fa26.svg"
+                },
+                "imageLight": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F878fe1e9c204e382723d67347906fa26.svg"
+                },
+                "imageDark": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F1503c6781e29b2153d2560ed55982dc9.svg"
+                }
+              },
+              "tr": {
+                "title": "İstanbul Daireleri",
+                "footer": "© 2026. İstanbul Daireleri. Tüm Hakları Saklıdır.",
+                "phone": "+77056375859",
+                "email": "istanbul.apartments@gmail.com",
+                "socials": [
+                  {
+                    "key": "facebook",
+                    "value": "https:\u002F\u002Ffacebook.com"
+                  }
+                ],
+                "favicon": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F3d64a748131b60f708e2a5cb8c20a640.png"
+                },
+                "imageLight": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F3d64a748131b60f708e2a5cb8c20a640.png"
+                },
+                "imageDark": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F3d64a748131b60f708e2a5cb8c20a640.png"
+                }
+              },
+              "ru": {
+                "title": "Квартиры в Стамбуле",
+                "footer": "© 2026. Апартаменты в Стамбуле. Все права защищены.",
+                "phone": "+77056375859",
+                "email": "istanbul.apartments@gmail.com",
+                "socials": [
+                  {
+                    "key": "facebook",
+                    "value": "https:\u002F\u002Ffacebook.com"
+                  }
+                ],
+                "favicon": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F3d64a748131b60f708e2a5cb8c20a640.png"
+                },
+                "imageLight": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F3d64a748131b60f708e2a5cb8c20a640.png"
+                },
+                "imageDark": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F3d64a748131b60f708e2a5cb8c20a640.png"
+                }
+              },
+              "ar": {
+                "title": "شقق إسطنبول",
+                "footer": "© 2026. شقق إسطنبول. جميع الحقوق محفوظة.",
+                "phone": "+77056375859",
+                "email": "istanbul.apartments@gmail.com",
+                "socials": [
+                  {
+                    "key": "facebook",
+                    "value": "https:\u002F\u002Ffacebook.com"
+                  }
+                ],
+                "favicon": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F3d64a748131b60f708e2a5cb8c20a640.png"
+                },
+                "imageLight": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F3d64a748131b60f708e2a5cb8c20a640.png"
+                },
+                "imageDark": {
+                  "alt": "Untitled",
+                  "title": null,
+                  "src": "https:\u002F\u002Ffs.alltheworld-apartments.com\u002Fstorage\u002Fistanbul\u002Fgeneral\u002F3d64a748131b60f708e2a5cb8c20a640.png"
+                }
+              }
+            }
+          },
+          "h": {
+          },
+          "s": 200,
+          "st": "OK",
+          "u": "https:\u002F\u002Fapi.alltheworld-apartments.com\u002Fcommon",
+          "rt": "json"
+        },
+        "__nghData__": [
+          {
+            "t": {
+              "0": "t1"
+            },
+            "c": {
+              "0": [
+                {
+                  "i": "t1",
+                  "r": 1
+                }
+              ]
+            }
+          },
+          {
+            "t": {
+              "0": "t0"
+            },
+            "c": {
+              "0": [
+                {
+                  "i": "t0",
+                  "r": 1
+                }
+              ]
+            }
+          },
+          {
+          },
+          {
+            "t": {
+              "1": "t2"
+            },
+            "c": {
+              "1": [
+                {
+                  "i": "t2",
+                  "r": 43,
+                  "t": {
+                    "1": "t3"
+                  },
+                  "c": {
+                    "1": [
+                      {
+                        "i": "t3",
+                        "r": 7,
+                        "t": {
+                          "0": "t4",
+                          "1": "t5",
+                          "2": "t6",
+                          "3": "t7",
+                          "4": "t8",
+                          "5": "t9"
+                        },
+                        "c": {
+                          "0": [
+                            {
+                              "i": "t4",
+                              "r": 1
+                            }
+                          ],
+                          "1": [
+                          ],
+                          "2": [
+                          ],
+                          "3": [
+                          ],
+                          "4": [
+                          ],
+                          "5": [
+                          ]
+                        }
+                      },
+                      {
+                        "i": "t3",
+                        "r": 7,
+                        "t": {
+                          "0": "t4",
+                          "1": "t5",
+                          "2": "t6",
+                          "3": "t7",
+                          "4": "t8",
+                          "5": "t9"
+                        },
+                        "c": {
+                          "0": [
+                          ],
+                          "1": [
+                            {
+                              "i": "t5",
+                              "r": 1
+                            }
+                          ],
+                          "2": [
+                          ],
+                          "3": [
+                          ],
+                          "4": [
+                          ],
+                          "5": [
+                          ]
+                        }
+                      },
+                      {
+                        "i": "t3",
+                        "r": 7,
+                        "t": {
+                          "0": "t4",
+                          "1": "t5",
+                          "2": "t6",
+                          "3": "t7",
+                          "4": "t8",
+                          "5": "t9"
+                        },
+                        "c": {
+                          "0": [
+                          ],
+                          "1": [
+                          ],
+                          "2": [
+                            {
+                              "i": "t6",
+                              "r": 1
+                            }
+                          ],
+                          "3": [
+                          ],
+                          "4": [
+                          ],
+                          "5": [
+                          ]
+                        }
+                      },
+                      {
+                        "i": "t3",
+                        "r": 7,
+                        "t": {
+                          "0": "t4",
+                          "1": "t5",
+                          "2": "t6",
+                          "3": "t7",
+                          "4": "t8",
+                          "5": "t9"
+                        },
+                        "c": {
+                          "0": [
+                          ],
+                          "1": [
+                          ],
+                          "2": [
+                          ],
+                          "3": [
+                            {
+                              "i": "t7",
+                              "r": 1
+                            }
+                          ],
+                          "4": [
+                          ],
+                          "5": [
+                          ]
+                        }
+                      },
+                      {
+                        "i": "t3",
+                        "r": 7,
+                        "t": {
+                          "0": "t4",
+                          "1": "t5",
+                          "2": "t6",
+                          "3": "t7",
+                          "4": "t8",
+                          "5": "t9"
+                        },
+                        "c": {
+                          "0": [
+                          ],
+                          "1": [
+                          ],
+                          "2": [
+                          ],
+                          "3": [
+                          ],
+                          "4": [
+                            {
+                              "i": "t8",
+                              "r": 1
+                            }
+                          ],
+                          "5": [
+                          ]
+                        }
+                      },
+                      {
+                        "i": "t3",
+                        "r": 7,
+                        "t": {
+                          "0": "t4",
+                          "1": "t5",
+                          "2": "t6",
+                          "3": "t7",
+                          "4": "t8",
+                          "5": "t9"
+                        },
+                        "c": {
+                          "0": [
+                          ],
+                          "1": [
+                          ],
+                          "2": [
+                          ],
+                          "3": [
+                          ],
+                          "4": [
+                          ],
+                          "5": [
+                            {
+                              "i": "t9",
+                              "r": 1
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "t": {
+              "0": "t25",
+              "1": "t26"
+            },
+            "c": {
+              "0": [
+              ],
+              "1": [
+                {
+                  "i": "t26",
+                  "r": 1,
+                  "t": {
+                    "0": "t27"
+                  },
+                  "c": {
+                    "0": [
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "t": {
+              "0": "t11",
+              "1": "t17",
+              "2": "t18",
+              "4": "t19",
+              "5": "t20",
+              "9": "t28"
+            },
+            "c": {
+              "0": [
+                {
+                  "i": "t11",
+                  "r": 2,
+                  "c": {
+                    "0": [
+                    ],
+                    "2": [
+                      {
+                        "i": "t13",
+                        "r": 1,
+                        "t": {
+                          "0": "t14"
+                        },
+                        "c": {
+                          "0": [
+                          ]
+                        }
+                      }
+                    ],
+                    "3": [
+                      {
+                        "i": "t15",
+                        "r": 2,
+                        "c": {
+                          "0": [
+                            {
+                              "i": "t16",
+                              "r": 1
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "4": [
+                    ]
+                  },
+                  "t": {
+                    "2": "t12",
+                    "3": "t15",
+                    "4": "t13"
+                  }
+                }
+              ],
+              "1": [
+              ],
+              "2": [
+              ],
+              "4": [
+                {
+                  "i": "t20",
+                  "r": 6,
+                  "t": {
+                    "0": "t21",
+                    "1": "t24"
+                  },
+                  "c": {
+                    "0": [
+                      {
+                        "i": "t21",
+                        "r": 4,
+                        "e": {
+                          "0": 3
+                        },
+                        "t": {
+                          "1": "t22",
+                          "2": "t23"
+                        },
+                        "c": {
+                          "1": [
+                          ],
+                          "2": [
+                            {
+                              "i": "t23",
+                              "r": 1
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "1": [
+                    ]
+                  }
+                }
+              ],
+              "5": [
+              ]
+            },
+            "d": [
+              9
+            ]
+          },
+          {
+            "t": {
+              "0": "t10"
+            },
+            "c": {
+              "0": [
+                {
+                  "i": "t10",
+                  "r": 1,
+                  "t": {
+                    "1": "t16",
+                    "3": "t29"
+                  },
+                  "d": [
+                    1,
+                    3
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "n": {
+              "2": "0fn"
+            },
+            "t": {
+              "2": "t39",
+              "3": "t40",
+              "4": "t41",
+              "5": "t44",
+              "6": "t45"
+            },
+            "c": {
+              "2": [
+              ],
+              "3": [
+              ],
+              "4": [
+                {
+                  "i": "t41",
+                  "r": 3,
+                  "e": {
+                    "0": 2
+                  },
+                  "t": {
+                    "1": "t42",
+                    "2": "t43"
+                  },
+                  "c": {
+                    "1": [
+                    ],
+                    "2": [
+                    ]
+                  }
+                }
+              ],
+              "5": [
+              ],
+              "6": [
+              ]
+            }
+          },
+          {
+            "t": {
+              "0": "t46"
+            },
+            "c": {
+              "0": [
+              ]
+            }
+          },
+          {
+            "t": {
+              "4": "t30",
+              "5": "t31",
+              "6": "t32",
+              "11": "t33",
+              "12": "t34",
+              "13": "t35",
+              "18": "t36",
+              "19": "t37",
+              "20": "t38"
+            },
+            "c": {
+              "4": [
+                {
+                  "i": "t30",
+                  "r": 1
+                }
+              ],
+              "5": [
+              ],
+              "6": [
+              ],
+              "11": [
+                {
+                  "i": "t33",
+                  "r": 1
+                }
+              ],
+              "12": [
+              ],
+              "13": [
+              ],
+              "18": [
+                {
+                  "i": "t36",
+                  "r": 1
+                }
+              ],
+              "19": [
+              ],
+              "20": [
+              ]
+            },
+            "n": {
+              "23": "22f2"
+            },
+            "d": [
+              26,
+              27,
+              29,
+              33,
+              34,
+              36,
+              40,
+              41,
+              43
+            ]
+          },
+          {
+            "c": {
+              "1": [
+                {
+                  "i": "c3331673111",
+                  "r": 1
+                }
+              ]
+            }
+          },
+          {
+            "c": {
+              "0": [
+                {
+                  "i": "c1245682802",
+                  "r": 1
+                }
+              ]
+            }
+          }
+        ]
+      }</script>
+  </body>
+</html>

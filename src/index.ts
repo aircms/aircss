@@ -9,8 +9,9 @@ import { doc } from "./helper/document";
 import { IKeyframe } from "./types/IKeyframe";
 import { keyframe } from "./helper/keyframe";
 import { extractClass } from "./helper/extract-class";
-import { hexToRgb } from "./helper/hexToRgb";
+import { hexToRgb } from "./helper/hex-to-rgb";
 import { extractClassesFromHtml } from "./helper/extract-classes-from-html";
+import { hasSelector } from "./helper/has-selector";
 
 export class AirCss {
   private options: IOptions = defaultOptions;
@@ -39,7 +40,9 @@ export class AirCss {
         return;
       }
       this.classCache[className] = true;
-      this.proceedClassName(className, el);
+      if (!hasSelector(className)) {
+        this.proceedClassName(className, el);
+      }
     });
   }
 
@@ -47,14 +50,16 @@ export class AirCss {
 
     extractClassesFromHtml(html).forEach((className) => this.proceedClassName(className, null));
 
-    const css: Array<string> = [];
+    const css: Array<string> = [
+      `<style id="${this.options.defaults.cssPrefix}-base">${this.staticCss["base"]?.join("\n")}</style>`,
+      `<style id="${this.options.defaults.cssPrefix}-colors">${this.staticCss["colors"]?.join("\n")}</style>`,
+      `<style id="${this.options.defaults.cssPrefix}-spaces">${this.staticCss["spaces"]?.join("\n")}</style>`,
+    ];
 
-    Object.entries(this.staticCss).forEach(([ id, nodes ]) => {
-      let media: string = "";
-      if (this.options.defaults.breakpoints?.[id] !== undefined) {
-        media = `media="(min-width: ${this.options.defaults.breakpoints[id]}px)"`;
+    Object.entries(this.options.defaults.breakpoints as {}).forEach(([ name, breakpoint ]) => {
+      if (breakpoint) {
+        css.push(`<style id="${this.options.defaults.cssPrefix}-${name}" media="(min-width: ${breakpoint}px)">${(this.staticCss[name] ?? []).join("\n")}</style>`);
       }
-      css.push(`<style id="${id}" ${media}>${(nodes ?? []).join("")}</style>`);
     });
 
     return css.join("");
@@ -97,12 +102,12 @@ export class AirCss {
   style(id: string, node: string, callback?: (style: HTMLStyleElement) => void): void {
     const styleId = `${this.options.defaults.cssPrefix}-${id}`;
 
-    this.staticCss[styleId] = this.staticCss[styleId] ?? [];
-    this.staticCss[styleId].push(node);
+    this.staticCss[id] = this.staticCss[id] ?? [];
+    this.staticCss[id].push(node);
 
     doc(() => style(styleId, (style: HTMLStyleElement) => {
-      // callback && callback(style);
-      // style.appendChild(document.createTextNode(node));
+      callback && callback(style);
+      style.appendChild(document.createTextNode(node));
     }));
   }
 

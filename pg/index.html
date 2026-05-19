@@ -9,12 +9,20 @@
   </head>
   <body>
     <button onclick="aaa()">CLICK</button>
+    <div id="sss"></div>
+    <div id="html" class="h:20"></div>
     <script>
-      const air = AirCss.getInstance();
 
       function aaa() {
-        const g = air.getStaticCss(`<div class="bg:primary text:secondary p:20 fs:30" >CLICK<div class="bg:secondary text:primary p:20 fs:30 hover:bg:amber">HOVER</div></div>`);
-        console.log(g);
+
+        fetch("test.html")
+          .then(response => response.text())
+          .then((html) => {
+            const air = AirCss.getInstance();
+            const g = air.getStaticCss(html);
+            document.querySelector('#sss').innerHTML = g;
+            // document.querySelector('#html').innerHTML = html;
+          });
       }
     </script>
   </body>
