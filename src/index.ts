@@ -41,6 +41,13 @@ export class AirCss {
         return;
       }
       this.classCache[className] = true;
+      
+      console.log({
+        className,
+        escape: escape(className),
+        hasSelector: hasSelector(escape(className)),
+      });
+
       if (!hasSelector(escape(className))) {
         this.proceedClassName(className, el);
       }
