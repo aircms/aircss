@@ -25,6 +25,8 @@ export class AirCss {
   private static instance: AirCss | null = null;
 
   static getInstance(options?: Partial<IOptions>): AirCss {
+    console.log("AirCss.getInstance");
+
     if (!this.instance) {
       this.instance = new this(options);
     }
@@ -35,6 +37,8 @@ export class AirCss {
   }
 
   constructor(options?: Partial<IOptions>) {
+    console.log("AirCss.constructor");
+
     this.setOptions(options);
 
     this.listen("*", (el: HTMLElement, className: string) => {
