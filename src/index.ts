@@ -258,7 +258,7 @@ export class AirCss {
     });
 
     css.push("}");
-    this.style("colors", css.join("\n"));
+    this.style("colors", css.join("\n"), undefined, true);
   }
 
   private initStyleElements(): void {
