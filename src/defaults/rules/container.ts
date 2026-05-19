@@ -16,6 +16,7 @@ export const container: IRule = {
         airCss.addStyles({
           breakpoint: media,
           selector: ".container",
+          onlyOne: true,
           styles: {
             "max-width": containers[media].toString(),
           },
