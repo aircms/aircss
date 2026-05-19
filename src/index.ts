@@ -29,8 +29,7 @@ export class AirCss {
 
     if (!this.instance) {
       this.instance = new this(options);
-    }
-    if (options) {
+    } else if (options) {
       this.instance.setOptions(options);
     }
     return this.instance;
