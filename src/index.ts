@@ -153,7 +153,7 @@ export class AirCss {
     Object.entries(this.keyframes).forEach(([ key, value ]) => {
       css += `@keyframes ${key} { ${typeof value === "string" ? value : keyframe(value)} } `;
     });
-    this.style("keyframes", css);
+    this.style("keyframes", css, undefined, true);
   }
 
   listen(pattern: string, callback: (el: HTMLElement, className: string) => void): MutationObserver | undefined {
