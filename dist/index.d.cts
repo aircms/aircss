@@ -12,7 +12,7 @@ interface IDefaults {
     animationTimingFunction: string;
     important: boolean;
     grids: number;
-    containers: Record<string, number>;
+    containers: Record<string, string>;
     breakpoints: Record<string, number>;
     spaces: Record<string, Record<string, string>>;
     colors: TColors & {
